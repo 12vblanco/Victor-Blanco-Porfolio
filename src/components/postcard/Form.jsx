@@ -10,13 +10,11 @@ const From = () => {
       </Row>
       <form
         name="contact"
-        netlify
         method="POST"
-        netlify-honeypot="bot-field"
         data-netlify="true"
+        netlify-honeypot="bot-field"
       >
         <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
         <Row>
           <Message>
             <label htmlFor="message">Message*</label>
