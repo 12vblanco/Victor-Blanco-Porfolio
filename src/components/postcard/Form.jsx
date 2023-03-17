@@ -18,17 +18,7 @@ const From = () => {
         <Row>
           <Message>
             <label htmlFor="message">Message*</label>
-            <textarea
-              name="message"
-              id="message"
-              required
-              style={{
-                width: "220px",
-                height: "220px",
-                border: ".1px solid black",
-                background: "#f2fdfb",
-              }}
-            ></textarea>
+            <TextArea name="message" id="message" required></TextArea>
           </Message>
           <Address>
             <label htmlFor="name">Name*</label>
@@ -69,10 +59,15 @@ const Div = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 520px;
-  height: auto;
+  width: 540px;
+  height: 340px;
   border: 1.6px solid black;
   margin-bottom: 60px;
+  @media (max-width: 620px) {
+    width: 100%;
+    max-width: 340px;
+    height: 580px;
+  }
 `;
 
 const Row = styled.div`
@@ -80,6 +75,10 @@ const Row = styled.div`
   width: 100%;
   justify-content: center;
   padding: 12px;
+  @media (max-width: 620px) {
+    flex-direction: column-reverse;
+    /* margin-left: 10%; */
+  }
 `;
 
 const Text = styled.p`
@@ -90,6 +89,11 @@ const Text = styled.p`
   font-weight: 500;
   letter-spacing: -1px;
   margin-left: 32px;
+  @media (max-width: 620px) {
+    margin-left: 2px;
+    margin-top: 12px;
+    margin-bottom: -12px;
+  }
 `;
 
 const Stamp = styled.div`
@@ -104,16 +108,34 @@ const Stamp = styled.div`
   text-align: left;
   font-size: 10px;
   padding: 6px;
+  @media (max-width: 620px) {
+    top: 20px;
+  }
 `;
 
 const Message = styled.div`
-  height: 144px;
+  height: 164px;
   width: 50%;
   position: relative;
   top: -40px;
   text-align: left;
   padding: 12px 12px 12px 8px;
+  @media (max-width: 620px) {
+    top: 5px;
+    left: 20px;
+  }
 `;
+
+const TextArea = styled.textarea`
+  width: 220px;
+  height: 180px;
+  border: 0.1px solid black;
+  background: #fff;
+  @media (max-width: 620px) {
+    width: 260px;
+  }
+`;
+
 const Address = styled.div`
   margin-top: 12px;
   width: 50%;
@@ -122,13 +144,22 @@ const Address = styled.div`
   font-size: 14px;
   border: solid;
   border-width: 0 0 0 2px;
+  @media (max-width: 620px) {
+    border: none;
+    margin-left: 20px;
+  }
 `;
 
 const RowBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-right: 10px;
   padding: 8px 12px;
+  @media (max-width: 620px) {
+    position: relative;
+    top: 55px;
+  }
 `;
 
 const Checkbox = styled.div`
@@ -169,7 +200,7 @@ const Button = styled.button`
 
 const Input = styled.input`
   border-bottom: 0.1px solid black;
-  background: #f2fdfb;
+  background: #fff;
   margin-top: 16px;
   border-top-style: hidden;
   border-right-style: hidden;

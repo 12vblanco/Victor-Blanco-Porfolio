@@ -1,15 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import cs2 from "../../assets/cs2.png";
-// import img1 from "../../assets/caseStudies/varu1.png";
-// import img2 from "../../assets/caseStudies/varu2.png";
-// import img4 from "../../assets/caseStudies/varu4.png";
-// import Skill from "../elements/Skill";
+import cs4 from "../../assets/cs4.png";
 
-const CaseStudy2 = () => {
+const CaseStudy4 = () => {
   return (
     <Div>
-      <ImgCs src={cs2} />
+      <ImgCs src={cs4} />
       {/* <Column>
         <Row>
           <Img src={img4} />
@@ -47,7 +43,7 @@ const Div = styled.div`
   text-align: left;
   display: flex;
   border: solid;
-  height: auto;
+  /* height: 710px; */
   /* border: solid 1px #000; */
   width: 720px;
   /* height: 618.48px; */
@@ -113,4 +109,4 @@ const ImgCs = styled.img`
 //   margin-bottom: -8px;
 // `;
 
-export default CaseStudy2;
+export default CaseStudy4;

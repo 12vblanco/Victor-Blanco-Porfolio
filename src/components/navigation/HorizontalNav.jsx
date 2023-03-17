@@ -8,7 +8,7 @@ import NavContact from "./NavContact";
 const HorizontalNav = () => {
   return (
     <NavBox>
-      <Link to="/home#form">
+      <Link to="/home#home">
         <Logo />
       </Link>
       <NavContact />
@@ -23,10 +23,10 @@ const NavBox = styled.div`
   align-items: center;
   top: 0;
   left: 50px;
-  background: #f2fdfb;
+  background: #fff;
   width: calc(100% - 50px);
   height: 50px;
-  z-index: 1;
+  z-index: 21;
   border-width: 0px 1px 1px 0px;
   border-style: solid;
   border-color: #023c71;

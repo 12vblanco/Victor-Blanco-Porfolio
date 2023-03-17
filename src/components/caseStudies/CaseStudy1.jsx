@@ -54,17 +54,39 @@ const CaseStudy1 = () => {
   );
 };
 
+// const Div = styled.div`
+//   position: relative;
+//   text-align: left;
+//   display: flex;
+//   border: solid;
+//   height: auto;
+//   border: solid 1px #000;
+//   width: 560px;
+//   padding: 18px 30px;
+//   margin: 30px;
+
+//   span {
+//     padding-top: 8px;
+//     padding-left: 12px;
+//     color: red;
+//     cursor: pointer;
+//     font-size: 22px;
+//   }
+// `;
+
 const Div = styled.div`
   position: relative;
   text-align: left;
   display: flex;
   border: solid;
-  height: auto;
-  border: solid 1px #000;
-  width: 560px;
-  padding: 18px 30px;
+  justify-content: center;
+  align-items: center;
+  height: 710px;
+  /* border: solid 1px #000; */
+  width: 720px;
+  /* height: 618.48px; */
+  /* padding: 18px 30px; */
   margin: 30px;
-
   span {
     padding-top: 8px;
     padding-left: 12px;
@@ -99,6 +121,7 @@ const Text = styled.div`
   font-size: 15px;
   line-height: 1.2;
   margin-top: 16px;
+  max-width: 400px;
   padding-right: 10px;
   padding-left: 12px;
 `;

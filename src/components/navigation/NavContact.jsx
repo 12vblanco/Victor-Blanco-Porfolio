@@ -7,7 +7,7 @@ const Buttons = () => {
   return (
     <Div>
       <Link to="/home#form">
-        <ContactBtn>Contact</ContactBtn>
+        <ContactBtn>Get a quote</ContactBtn>
       </Link>
     </Div>
   );

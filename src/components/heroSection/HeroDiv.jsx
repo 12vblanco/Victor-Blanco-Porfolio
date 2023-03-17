@@ -1,65 +1,62 @@
 import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development.png";
-import img1 from "../../assets/img1.png";
+import pic1 from "../../assets/pic1.png";
+import Container from "../elements/Container";
 
 const HeroDiv = () => {
   return (
-    <Div>
-      <Container>
-        <HeroText>
-          <SolidText>Web Design,</SolidText>
-          <SolidText>Maintenance &</SolidText>
-          <LineText src={dev} />
+    <Container>
+      <HomeTag id="home" />
 
-          <P>
-            I create carefully planned websites for your business, <br />
-            art portfolio, or personal project with passion and attention to
-            detail. The websites are specially tailored to you at an affordable
-            price.
-          </P>
-          <P>
-            I can completely customise your website using HTML, CSS, JavaScript
-            & React or I can use your favourite CMS like Wordpress, Wix or
-            Shopify.
-          </P>
-        </HeroText>
-        <HeroImg>
-          <Img src={img1} />
-        </HeroImg>
-      </Container>
-    </Div>
+      <Div>
+        <DivContainer>
+          <HeroImg>
+            <Overlay />
+            <Img src={pic1} />
+          </HeroImg>
+          <HeroText>
+            <SolidText>Web Design,</SolidText>
+            <SolidText>Maintenance &</SolidText>
+            <LineText src={dev} />
+
+            <P>
+              I create carefully planned websites for your business, <br />
+              art portfolio, or personal project with passion and attention to
+              detail. The websites are specially tailored to you at an
+              affordable price.
+            </P>
+            <P>
+              I can completely customise your website using HTML, CSS,
+              JavaScript & React or I can use your favourite CMS like Wordpress,
+              Wix or Shopify.
+            </P>
+          </HeroText>
+        </DivContainer>
+      </Div>
+    </Container>
   );
 };
 
 const Div = styled.div`
-  padding-top: 100px;
-  padding-bottom: 40px;
   display: flex;
-  width: 100vw;
+  width: 100%;
+  max-width: 1140px;
   justify-content: center;
   align-items: center;
-  border: solid;
-  border-width: 0 1px 1px 0;
-  margin-bottom: 60px;
 
-  /* @media (max-width: 1640px) {
-    padding-left: 120px;
-    padding-bottom: 120px;
-  }*/
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     padding-left: 90px;
-  }
+  } */
   @media (max-width: 478px) {
     padding-left: 70px;
     padding-right: 30px;
   }
 `;
 
-const Container = styled.div`
+const DivContainer = styled.div`
   display: flex;
   max-width: 1280px;
-  margin-bottom: 60px;
   @media (max-width: 660px) {
     flex-direction: column;
   }
@@ -70,6 +67,7 @@ const HeroText = styled.div`
   flex-direction: column;
   justify-content: center;
   line-height: 0.9;
+  width: 100%;
   max-width: 471px;
   min-width: 284px;
   @media (max-width: 640px) {
@@ -81,10 +79,12 @@ const HeroText = styled.div`
   }
 `;
 const HeroImg = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
 
   @media (max-width: 800px) {
     margin-left: 12px;
@@ -101,10 +101,11 @@ const HeroImg = styled.div`
 `;
 
 const Img = styled.img`
-  width: 60%;
-  max-width: 400px;
-  height: auto;
-  min-width: 240px;
+  width: 340px;
+  height: 340px;
+  margin: 40px;
+  border-radius: 50%;
+  border: 2px solid #002140;
 
   @media (max-width: 478px) {
     width: 100%;
@@ -112,11 +113,21 @@ const Img = styled.img`
   }
 `;
 
+const Overlay = styled.div`
+  position: absolute;
+  top: 40px;
+  left: 54px;
+  width: 340px;
+  height: 340px;
+  background-color: rgba(0, 33, 64, 0.2);
+  border-radius: 50%;
+`;
+
 const SolidText = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 42px;
+  font-size: 52px;
   letter-spacing: -1.7px;
   font-weight: 700;
   @media (max-width: 478px) {
@@ -136,11 +147,17 @@ const LineText = styled.img`
 const P = styled.p`
   text-align: left;
   line-height: 1.2;
+  max-width: 760px;
   font-size: 15px;
   margin-top: 16px;
   @media (max-width: 478px) {
     font-size: 14px;
   }
+`;
+
+const HomeTag = styled.div`
+  position: relative;
+  top: -300px;
 `;
 
 export default HeroDiv;

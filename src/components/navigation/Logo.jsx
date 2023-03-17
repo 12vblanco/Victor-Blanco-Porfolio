@@ -30,6 +30,9 @@ const LogoImg = styled.div`
   @media (max-width: 640px) {
     padding-left: 50%;
   }
+  @media (max-width: 350px) {
+    padding-left: 10px;
+  }
 `;
 const LogoText = styled.div`
   display: flex;

@@ -12,7 +12,6 @@ const Div = styled.div`
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  margin: 2px;
   width: 110px;
   height: 50px;
   justify-content: center;
