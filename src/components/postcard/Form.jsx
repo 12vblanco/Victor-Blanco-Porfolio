@@ -59,8 +59,8 @@ const Div = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 540px;
-  height: 340px;
+  width: 560px;
+  height: 390px;
   border: 1.6px solid black;
   margin-bottom: 60px;
   @media (max-width: 620px) {
@@ -77,7 +77,6 @@ const Row = styled.div`
   padding: 12px;
   @media (max-width: 620px) {
     flex-direction: column-reverse;
-    /* margin-left: 10%; */
   }
 `;
 
@@ -117,7 +116,7 @@ const Message = styled.div`
   height: 164px;
   width: 50%;
   position: relative;
-  top: -40px;
+  top: -20px;
   text-align: left;
   padding: 12px 12px 12px 8px;
   @media (max-width: 620px) {
@@ -137,7 +136,7 @@ const TextArea = styled.textarea`
 `;
 
 const Address = styled.div`
-  margin-top: 12px;
+  margin-top: 38px;
   width: 50%;
   text-align: left;
   padding: 12px;
@@ -147,19 +146,22 @@ const Address = styled.div`
   @media (max-width: 620px) {
     border: none;
     margin-left: 20px;
+    margin-top: 12px;
   }
 `;
 
 const RowBottom = styled.div`
   display: flex;
+  position: relative;
+  top: 55px;
   align-items: center;
   justify-content: space-between;
   margin-right: 10px;
   padding: 8px 12px;
-  @media (max-width: 620px) {
+  /* @media (max-width: 620px) {
     position: relative;
     top: 55px;
-  }
+  } */
 `;
 
 const Checkbox = styled.div`

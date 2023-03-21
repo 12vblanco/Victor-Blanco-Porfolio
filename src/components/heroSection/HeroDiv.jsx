@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development.png";
-import pic1 from "../../assets/pic1.png";
+import pic1 from "../../assets/heroImg.png";
 import Container from "../elements/Container";
 
 const HeroDiv = () => {
@@ -12,7 +12,6 @@ const HeroDiv = () => {
       <Div>
         <DivContainer>
           <HeroImg>
-            <Overlay />
             <Img src={pic1} />
           </HeroImg>
           <HeroText>
@@ -64,6 +63,7 @@ const DivContainer = styled.div`
 
 const HeroText = styled.div`
   display: flex;
+  padding: 0 32px 0 0;
   flex-direction: column;
   justify-content: center;
   line-height: 0.9;
@@ -101,26 +101,14 @@ const HeroImg = styled.div`
 `;
 
 const Img = styled.img`
-  width: 340px;
-  height: 340px;
-  margin: 40px;
-  border-radius: 50%;
-  border: 2px solid #002140;
+  width: 440px;
+  height: 440px;
+  margin: 0 40px 40px 40px;
 
   @media (max-width: 478px) {
     width: 100%;
     margin-right: 6px;
   }
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  top: 40px;
-  left: 54px;
-  width: 340px;
-  height: 340px;
-  background-color: rgba(0, 33, 64, 0.2);
-  border-radius: 50%;
 `;
 
 const SolidText = styled.div`
