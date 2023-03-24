@@ -55,7 +55,7 @@ const Div = styled.div`
   max-width: 660px;
   height: fit-content;
   border: solid 1px #000;
-  margin: 30px;
+  margin: 60px 0 30px 0;
   padding: 0 12px;
   @media (max-width: 600px) {
     flex-direction: column-reverse;

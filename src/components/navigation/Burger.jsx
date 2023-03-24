@@ -1,13 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Social from "./Social";
 
-const Burger = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+const Burger = ({ handleToggle, isOpen }) => {
   const handleContactClick = () => {
     handleToggle();
     window.location.href = "/home#form";

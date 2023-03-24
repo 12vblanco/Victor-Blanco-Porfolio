@@ -3,10 +3,10 @@ import styled from "styled-components";
 import Burger from "./Burger";
 import Social from "./Social";
 
-const VerticalNav = () => {
+const VerticalNav = ({ handleToggle, isOpen }) => {
   return (
     <NavBox>
-      <Burger />
+      <Burger handleToggle={handleToggle} isOpen={isOpen} />
       <Social />
     </NavBox>
   );

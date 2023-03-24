@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import SectionContainer from "../elements/SectionContainer";
+import SectionDiv from "../elements/SectionDiv";
 
 const SkillContent = ({ id, text, title, img, imgOnRight }) => {
   const ImgPositioned = styled(ImgDiv)`
@@ -19,42 +21,18 @@ const SkillContent = ({ id, text, title, img, imgOnRight }) => {
   `;
 
   return (
-    <Container>
-      <Div id={id}>
+    <SectionContainer>
+      <SectionDiv id={id}>
         <ImgPositioned img={img} />
         <Overlay />
         <TextPositioned>
           <Title>{title}</Title>
           <Text>{text}</Text>
         </TextPositioned>
-      </Div>
-    </Container>
+      </SectionDiv>
+    </SectionContainer>
   );
 };
-
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1140px;
-  height: 360px;
-  margin: 20px;
-  @media (max-width: 750px) {
-    height: fit-content;
-    width: fit-content;
-  }
-`;
-
-const Div = styled.div`
-  display: flex;
-  border-radius: 8px;
-  overflow: hidden;
-  @media (max-width: 750px) {
-    flex-direction: column;
-  }
-`;
 
 const ImgDiv = styled.div`
   width: 50%;

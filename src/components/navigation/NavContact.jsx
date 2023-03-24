@@ -3,11 +3,16 @@ import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import ContactBtn from "../elements/ContactBtn";
 
-const Buttons = (props) => {
+const Buttons = ({ handleToggle, isOpen }) => {
+  const handleContactClick = () => {
+    handleToggle();
+    window.location.href = "/home#form";
+  };
+
   return (
     <Div>
       <Link to="/home#form">
-        <ContactBtn tagName={"Get a quote"} />
+        <ContactBtn onClick={handleContactClick} tagName={"Get a quote"} />
       </Link>
     </Div>
   );

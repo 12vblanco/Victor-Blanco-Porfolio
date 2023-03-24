@@ -5,13 +5,17 @@ import Logo from "./Logo";
 
 import NavContact from "./NavContact";
 
-const HorizontalNav = () => {
+const HorizontalNav = ({ handleToggle, isOpen }) => {
   return (
     <NavBox>
       <Link to="/home#home">
         <Logo />
       </Link>
-      <NavContact tagName={"Get a quote"} />
+      <NavContact
+        handleToggle={handleToggle}
+        isOpen={isOpen}
+        tagName={"Get a quote"}
+      />
     </NavBox>
   );
 };
