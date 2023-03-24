@@ -15,14 +15,14 @@ const CaseStudy = (oneCase) => {
         </Column>
       </Column1>
       <Column2>
-        <Row>
+        <ResponsiveRow>
           <Column>
             <Img src={oneCase.img2} />
           </Column>
           <Column>
             <Img src={oneCase.img3} />
           </Column>
-        </Row>
+        </ResponsiveRow>
         <Column>
           <Column>
             <Title>{oneCase.title}</Title>
@@ -51,11 +51,15 @@ const Div = styled.div`
   border: solid;
   justify-content: center;
   align-items: center;
-  width: 640px;
-  height: auto;
+  width: 100%;
+  max-width: 660px;
+  height: fit-content;
   border: solid 1px #000;
   margin: 30px;
   padding: 0 12px;
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Column = styled.div`
@@ -68,14 +72,23 @@ const Column1 = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
-  justify-content: center;
+  justify-content: space;
   align-items: center;
   width: 164px;
+  @media (max-width: 600px) {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
 `;
 const Column2 = styled.div`
   display: flex;
   flex-direction: column;
   width: calc(2 * 164px);
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 `;
 
 const Row = styled.div`
@@ -87,9 +100,24 @@ const Row = styled.div`
   align-items: flex-start;
 `;
 
+const ResponsiveRow = styled.div`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const RowLink = styled.div`
   text-align: left;
   margin: 12px 0;
+  @media (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 const Title = styled.div`
@@ -98,6 +126,7 @@ const Title = styled.div`
   font-weight: 700;
   margin-bottom: -18px;
   margin-left: 12px;
+  margin-top: 8%;
 `;
 
 const SubTitle = styled.div`
@@ -110,8 +139,8 @@ const SubTitle = styled.div`
 
 const Text = styled.div`
   font-size: 15px;
-  line-height: 1.2;
-  margin-top: 16px;
+  line-height: 1.5;
+  margin-top: 18px;
   padding-right: 10px;
   padding-left: 12px;
   text-align: left;
@@ -125,6 +154,10 @@ const Img = styled.img`
 
 const Pad = styled.div`
   padding-bottom: 22px;
+  margin-top: 20px;
+  @media (max-width: 600px) {
+    margin-top: 0px;
+  }
 `;
 
 const Skill = styled.div`

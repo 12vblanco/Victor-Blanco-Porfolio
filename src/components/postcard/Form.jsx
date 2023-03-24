@@ -49,7 +49,7 @@ const From = () => {
             </Checkbox>
           </div>
           <div>
-            <ContactBtn tagName={"Send"} />
+            <Btn tagName={"Send"} />
           </div>
         </RowBottom>
       </form>
@@ -176,6 +176,10 @@ const Tick = styled.input`
   height: 24px;
   border: 1px solid black;
   margin-right: 12px;
+`;
+
+const Btn = styled(ContactBtn)`
+  border-radius: 16px;
 `;
 
 const Input = styled.input`

@@ -1,21 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-import ContactForm from "./Form";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
+import ContactForm from "./Form";
 
 const PostFrom = () => {
   return (
     <SectionContainer>
       <FormTag id="form" />
-      <H2>Fill in your details</H2>
-      <H3> to get in touch</H3>
+      <FlexDiv>
+        <H2>Fill in your details</H2>
+        <H3> to get in touch</H3>
+      </FlexDiv>
       <SectionDiv>
         <ContactForm />
       </SectionDiv>
     </SectionContainer>
   );
 };
+
+const FlexDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 const H2 = styled.h2`
   display: flex;
@@ -31,6 +38,7 @@ const H2 = styled.h2`
     margin-left: 12px;
   }
 `;
+
 const H3 = styled.h2`
   font-size: 22px;
   letter-spacing: -1.2px;
