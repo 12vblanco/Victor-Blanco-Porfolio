@@ -1,15 +1,21 @@
 import styled from "styled-components";
-// import Skill from "./Skill";
 
 const CaseStudy = (oneCase) => {
   return (
     <Div>
-      <Column>
+      <Column1>
+        <Column>
+          <Img src={oneCase.img1} />
+          <Pad />
+        </Column>
+        <Column>
+          <Skill>{oneCase.skill1}</Skill>
+          <Skill>{oneCase.skill2}</Skill>
+          <Skill>{oneCase.skill3}</Skill>
+        </Column>
+      </Column1>
+      <Column2>
         <Row>
-          <Column>
-            <Img src={oneCase.img1} />
-            <Pad />
-          </Column>
           <Column>
             <Img src={oneCase.img2} />
           </Column>
@@ -17,32 +23,25 @@ const CaseStudy = (oneCase) => {
             <Img src={oneCase.img3} />
           </Column>
         </Row>
-        <Row>
+        <Column>
           <Column>
-            <Skill>{oneCase.skill1}</Skill>
-            <Skill>{oneCase.skill2}</Skill>
-            <Skill>{oneCase.skill3}</Skill>
+            <Title>{oneCase.title}</Title>
           </Column>
           <Column>
-            <Column>
-              <Title>{oneCase.title}</Title>
-            </Column>
-            <Column>
-              <SubTitle>{oneCase.subTitle}</SubTitle>
-            </Column>
-            <Row>
-              <Text>{oneCase.text}</Text>
-            </Row>
-            <Row>
-              <Link>
-                <a href={oneCase.link} target="_blank">
-                  {oneCase.title}
-                </a>
-              </Link>
-            </Row>
+            <SubTitle>{oneCase.subTitle}</SubTitle>
           </Column>
-        </Row>
-      </Column>
+          <Row>
+            <Text>{oneCase.text}</Text>
+          </Row>
+          <RowLink>
+            <Link>
+              <a href={oneCase.link} target="_blank">
+                {oneCase.title}
+              </a>
+            </Link>
+          </RowLink>
+        </Column>
+      </Column2>
     </Div>
   );
 };
@@ -63,15 +62,34 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
-  height: auto;
+  justify-content: center;
+`;
+const Column1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+`;
+const Column2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: calc(2 * 164px);
 `;
 
 const Row = styled.div`
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 0 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+`;
+
+const RowLink = styled.div`
+  text-align: left;
+  margin: 12px 0;
 `;
 
 const Title = styled.div`
@@ -79,8 +97,7 @@ const Title = styled.div`
   letter-spacing: -1.7px;
   font-weight: 700;
   margin-bottom: -18px;
-  padding-left: 32px;
-  text-align: left;
+  margin-left: 12px;
 `;
 
 const SubTitle = styled.div`
@@ -88,7 +105,7 @@ const SubTitle = styled.div`
   letter-spacing: -1.2px;
   font-weight: 500;
   margin-left: 14px;
-  padding-left: 28px;
+  margin-bottom: -12px;
 `;
 
 const Text = styled.div`
@@ -101,14 +118,13 @@ const Text = styled.div`
 `;
 
 const Img = styled.img`
-  width: 160px;
-  /* height: 300px; */
-  padding: 8px;
-  margin: 22px 0;
+  width: 140px;
+  margin: 22px 12px 0 12px;
+  border: 1px #023c71 solid;
 `;
 
 const Pad = styled.div`
-  padding-bottom: 42px;
+  padding-bottom: 22px;
 `;
 
 const Skill = styled.div`
@@ -121,12 +137,11 @@ const Skill = styled.div`
 `;
 
 const Link = styled.div`
-  padding-top: 8px;
-  padding-left: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 21px;
+  margin: 6px 0 4px 14px;
   a {
-    color: red;
+    color: #f74848;
   }
 `;
 

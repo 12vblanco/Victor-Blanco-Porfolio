@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ContactBtn from "../elements/ContactBtn";
 
 const From = () => {
   return (
@@ -48,7 +49,7 @@ const From = () => {
             </Checkbox>
           </div>
           <div>
-            <Button>Send</Button>
+            <ContactBtn tagName={"Send"} />
           </div>
         </RowBottom>
       </form>
@@ -158,10 +159,6 @@ const RowBottom = styled.div`
   justify-content: space-between;
   margin-right: 10px;
   padding: 8px 12px;
-  /* @media (max-width: 620px) {
-    position: relative;
-    top: 55px;
-  } */
 `;
 
 const Checkbox = styled.div`
@@ -179,25 +176,6 @@ const Tick = styled.input`
   height: 24px;
   border: 1px solid black;
   margin-right: 12px;
-`;
-
-const Button = styled.button`
-  display: flex;
-  background: #023c71;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #fff;
-  height: 40px;
-  padding: 0px 18px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.3s linear;
-
-  &:hover {
-    background: #015fb6;
-  }
 `;
 
 const Input = styled.input`

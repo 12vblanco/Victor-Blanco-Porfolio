@@ -11,7 +11,7 @@ const HorizontalNav = () => {
       <Link to="/home#home">
         <Logo />
       </Link>
-      <NavContact />
+      <NavContact tagName={"Get a quote"} />
     </NavBox>
   );
 };

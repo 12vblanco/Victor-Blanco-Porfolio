@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development.png";
 import pic1 from "../../assets/heroImg.png";
-import Container from "../elements/Container";
 
 const HeroDiv = () => {
   return (
@@ -37,26 +36,34 @@ const HeroDiv = () => {
   );
 };
 
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 60vh;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  border: solid;
+  border-width: 0 1px 1px 0;
+  @media (max-width: 600px) {
+    padding-top: 4%;
+  }
+`;
+
 const Div = styled.div`
   display: flex;
   width: 100%;
   max-width: 1140px;
   justify-content: center;
   align-items: center;
-
-  /* @media (max-width: 1200px) {
-    padding-left: 90px;
-  } */
-  @media (max-width: 478px) {
-    padding-left: 70px;
-    padding-right: 30px;
-  }
 `;
 
 const DivContainer = styled.div`
   display: flex;
   max-width: 1280px;
-  @media (max-width: 660px) {
+  @media (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -70,12 +77,16 @@ const HeroText = styled.div`
   width: 100%;
   max-width: 471px;
   min-width: 284px;
-  @media (max-width: 640px) {
-    width: 90%;
+  @media (max-width: 600px) {
+    max-width: 80vw;
+    min-width: 80vw;
+    padding: 0 0 0 40px;
   }
-  @media (max-width: 478px) {
-    padding-bottom: 40px;
-    width: 100%;
+  @media (max-width: 400px) {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0 12px 0 22px;
+    align-items: center;
   }
 `;
 const HeroImg = styled.div`
@@ -83,31 +94,28 @@ const HeroImg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-
-  @media (max-width: 800px) {
-    margin-left: 12px;
-    margin-right: 22px;
-  }
-  @media (max-width: 660px) {
-    position: relative;
-    left: -40px;
-    margin-top: 20px;
-  }
-  @media (max-width: 478px) {
-    left: -10px;
-  }
 `;
 
 const Img = styled.img`
-  width: 440px;
-  height: 440px;
+  width: 50vw;
+  max-width: 400px;
+  height: 50vw;
+  max-height: 400px;
   margin: 0 40px 40px 40px;
 
-  @media (max-width: 478px) {
-    width: 100%;
-    margin-right: 6px;
+  @media (max-width: 870px) {
+    max-width: 320px;
+    max-height: 320px;
+  }
+  @media (max-width: 760px) {
+    max-width: 220px;
+    max-height: 220px;
+  }
+  @media (max-width: 600px) {
+    max-width: 60vw;
+    max-height: 60vw;
+    min-width: 300px;
+    min-height: 300px;
   }
 `;
 
@@ -118,8 +126,18 @@ const SolidText = styled.div`
   font-size: 52px;
   letter-spacing: -1.7px;
   font-weight: 700;
-  @media (max-width: 478px) {
-    font-size: 26px;
+  @media (max-width: 990px) {
+    font-size: 38px;
+  }
+  @media (max-width: 760px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 38px;
+  }
+  @media (max-width: 400px) {
+    font-size: 32px;
+    margin-left: -12px;
   }
 `;
 const LineText = styled.img`
@@ -127,8 +145,15 @@ const LineText = styled.img`
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 280px;
-  @media (max-width: 478px) {
-    max-width: 188px;
+  @media (max-width: 760px) {
+    max-width: 200px;
+  }
+  @media (max-width: 600px) {
+    max-width: 280px;
+  }
+  @media (max-width: 400px) {
+    max-width: 240px;
+    margin-left: -12px;
   }
 `;
 
@@ -138,8 +163,19 @@ const P = styled.p`
   max-width: 760px;
   font-size: 15px;
   margin-top: 16px;
-  @media (max-width: 478px) {
+  @media (max-width: 990px) {
+    max-width: 40vw;
+  }
+  @media (max-width: 760px) {
     font-size: 14px;
+  }
+  @media (max-width: 600px) {
+    max-width: 80vw;
+  }
+  @media (max-width: 400px) {
+    max-width: 92vw;
+    text-align: left;
+    font-size: 15px;
   }
 `;
 

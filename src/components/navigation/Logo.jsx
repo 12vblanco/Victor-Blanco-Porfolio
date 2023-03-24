@@ -27,10 +27,8 @@ const LogoImg = styled.div`
   letter-spacing: -4px;
   font-size: 22px;
   padding-left: 16vw;
-  @media (max-width: 640px) {
-    padding-left: 50%;
-  }
-  @media (max-width: 350px) {
+
+  @media (max-width: 480px) {
     padding-left: 10px;
   }
 `;

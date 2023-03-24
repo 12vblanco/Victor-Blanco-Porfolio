@@ -1,44 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import ContactForm from "./Form";
+import SectionContainer from "../elements/SectionContainer";
+import SectionDiv from "../elements/SectionDiv";
 
 const PostFrom = () => {
   return (
-    <Container>
+    <SectionContainer>
       <FormTag id="form" />
-      <Column>
-        <H2>Fill in your details</H2>
-        <H3> to get in touch</H3>
-      </Column>
-      <Div>
+      <H2>Fill in your details</H2>
+      <H3> to get in touch</H3>
+      <SectionDiv>
         <ContactForm />
-      </Div>
-    </Container>
+      </SectionDiv>
+    </SectionContainer>
   );
 };
-
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 0 80px 0;
-  border: solid;
-  border-width: 0 1px 1px 0;
-`;
-const Div = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
-
-const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
 
 const H2 = styled.h2`
   display: flex;
@@ -49,6 +26,10 @@ const H2 = styled.h2`
   font-weight: 700;
   text-align: left;
   width: 482px;
+  @media (max-width: 600px) {
+    font-size: 38px;
+    margin-left: 12px;
+  }
 `;
 const H3 = styled.h2`
   font-size: 22px;
@@ -57,6 +38,9 @@ const H3 = styled.h2`
   text-align: left;
   width: 482px;
   margin-top: -16px;
+  @media (max-width: 600px) {
+    margin-left: 14px;
+  }
 `;
 
 const FormTag = styled.div`

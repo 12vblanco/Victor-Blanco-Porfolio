@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const ContactBtn = (props) => {
-  return <Div>{props.children}</Div>;
+  const { tagName, ...rest } = props;
+  return <Div {...rest}>{tagName}</Div>;
 };
 
 const Div = styled.div`

@@ -1,44 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import SectionContainer from "../elements/SectionContainer";
+import SectionDiv from "../elements/SectionDiv";
 import cases from "./Cases";
 import CaseStudy from "./CaseStudy";
 
 const CaseStudies = () => {
   return (
-    <Container>
+    <SectionContainer>
       <CaseTag id="cases" />
       <H2>Case Studies:</H2>
-      <Div>
+      <SectionDiv>
         {cases.map((oneCase) => {
           return <CaseStudy key={oneCase.id} {...oneCase} />;
         })}
-      </Div>
-    </Container>
+      </SectionDiv>
+    </SectionContainer>
   );
 };
-
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid black;
-  padding: 62px 0;
-  margin: 0 auto;
-`;
-
-const Div = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 1240px;
-`;
 
 const H2 = styled.h2`
   display: flex;
@@ -50,6 +29,10 @@ const H2 = styled.h2`
   text-align: left;
   width: 482px;
   margin-bottom: -30px;
+  @media (max-width: 600px) {
+    font-size: 38px;
+    margin-left: 12px;
+  }
 `;
 
 const CaseTag = styled.div`

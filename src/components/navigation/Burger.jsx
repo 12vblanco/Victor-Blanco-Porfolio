@@ -185,6 +185,9 @@ const MenuItem = styled.li`
   @media (max-width: 600px) {
     font-size: 40px;
   }
+  @media (max-width: 380px) {
+    font-size: 36px;
+  }
 
   a {
     font-size: 52px;
@@ -195,6 +198,9 @@ const MenuItem = styled.li`
     transition: all 0.5 linear;
     @media (max-width: 600px) {
       font-size: 40px;
+    }
+    @media (max-width: 380px) {
+      font-size: 36px;
     }
     &:hover {
       color: rgb(1, 95, 182);
