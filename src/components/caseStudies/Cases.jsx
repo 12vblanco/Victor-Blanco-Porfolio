@@ -1,15 +1,15 @@
-import orc1 from "../../assets/caseStudies/orchard1.png";
-import orc2 from "../../assets/caseStudies/orchard2.png";
-import orc3 from "../../assets/caseStudies/orchard3.png";
-import ser1 from "../../assets/caseStudies/ser1.png";
-import ser2 from "../../assets/caseStudies/ser2.png";
-import ser3 from "../../assets/caseStudies/ser3.png";
-import var1 from "../../assets/caseStudies/var1.png";
-import var2 from "../../assets/caseStudies/var2.png";
-import var3 from "../../assets/caseStudies/var3.png";
-import vic1 from "../../assets/caseStudies/vic1.png";
-import vic2 from "../../assets/caseStudies/vic2.png";
-import vic3 from "../../assets/caseStudies/vic3.png";
+import orc1 from "../../assets/caseStudies/orchard1-min.png";
+import orc2 from "../../assets/caseStudies/orchard2-min.png";
+import orc3 from "../../assets/caseStudies/orchard3-min.png";
+import ser1 from "../../assets/caseStudies/ser1-min.png";
+import ser2 from "../../assets/caseStudies/ser2-min.png";
+import ser3 from "../../assets/caseStudies/ser3-min.png";
+import var1 from "../../assets/caseStudies/var1-min.png";
+import var2 from "../../assets/caseStudies/var2-min.png";
+import var3 from "../../assets/caseStudies/var3-min.png";
+import vic1 from "../../assets/caseStudies/vic1-min.png";
+import vic2 from "../../assets/caseStudies/vic2-min.png";
+import vic3 from "../../assets/caseStudies/vic3-min.png";
 
 const cases = [
   {
@@ -42,7 +42,7 @@ const cases = [
     id: "03",
     title: "Serkles",
     subTitle: "Circular Fashion",
-    text: "Serkles is a circular fashion company that has partnered with sewing workshops in Glasgow, grass-roots wool producers in Spain, and the Cotton for Life program in Egypt to produce their amazing socks. They had been working with an agency to build their online shop but they had problems with performance, missed deadlines, and failure to adhere to terms. They enlisted my services to be able to launch their shop and through close collaboration, we successfully completed their online shop on time.",
+    text: "Serkles is a circular fashion company. They had been working with an agency to build their online shop but they had problems with performance, missed deadlines, and failure to adhere to terms. They enlisted my services to be able to launch their shop and through close collaboration and hard work, we successfully launched their online shop on time.",
     img1: ser1,
     img2: ser2,
     img3: ser3,
