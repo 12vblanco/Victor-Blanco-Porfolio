@@ -1,0 +1,32 @@
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "."
+
+[[redirects]]
+  from = '/api/*'
+  to = '/.netlify/functions/:splat'
+  status = 200
+
+[[redirects]]
+  from = '/home#services'
+  to = '/home'
+  status = 200
+[[redirects]]
+  from = '/home/#form'
+  to = '/home'
+  status = 200
+[[redirects]]
+  from = '/home/#cases'
+  to = '/home'
+  status = 200
+
+
+
+[[redirects]]
+  from = '/*'
+  to = '/home'
+  status = 404
+
+
+
