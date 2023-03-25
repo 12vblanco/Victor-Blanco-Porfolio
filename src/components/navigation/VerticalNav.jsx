@@ -5,10 +5,19 @@ import Social from "./Social";
 
 const VerticalNav = ({ handleToggle, isOpen }) => {
   return (
-    <NavBox>
-      <Burger handleToggle={handleToggle} isOpen={isOpen} />
-      <Social />
-    </NavBox>
+    <>
+      {isOpen ? (
+        <NavBox onClick={handleToggle}>
+          <Burger handleToggle={handleToggle} isOpen={isOpen} />
+          <Social />
+        </NavBox>
+      ) : (
+        <NavBox>
+          <Burger handleToggle={handleToggle} isOpen={isOpen} />
+          <Social />
+        </NavBox>
+      )}
+    </>
   );
 };
 

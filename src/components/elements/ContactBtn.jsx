@@ -21,7 +21,7 @@ const Div = styled.div`
   transition: all 0.3s linear;
 
   &:hover {
-    background: #015fb6;
+    background: rgba(40, 98, 150, 1) 100%;
   }
 `;
 

@@ -2,13 +2,13 @@ import React from "react";
 import CaseStudies from "../caseStudies/CaseStudies";
 import HeroDiv from "../heroSection/HeroDiv";
 import PostCardFrom from "../postcard/PostcardFrom";
-import SkillSection from "../Skills/SkillSection";
+import ServicesSection from "../Services/ServicesSection";
 
 const Home = () => {
   return (
     <>
       <HeroDiv />
-      <SkillSection />
+      <ServicesSection />
       <CaseStudies />
       <PostCardFrom />
     </>

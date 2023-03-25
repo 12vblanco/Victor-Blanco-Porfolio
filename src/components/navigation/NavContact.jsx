@@ -12,7 +12,11 @@ const Buttons = ({ handleToggle, isOpen }) => {
   return (
     <Div>
       <Link to="/home#form">
-        <ContactBtn onClick={handleContactClick} tagName={"Get a quote"} />
+        {isOpen ? (
+          <ContactBtn onClick={handleContactClick} tagName={"Get a quote"} />
+        ) : (
+          <ContactBtn tagName={"Get a quote"} />
+        )}
       </Link>
     </Div>
   );

@@ -7,16 +7,31 @@ import NavContact from "./NavContact";
 
 const HorizontalNav = ({ handleToggle, isOpen }) => {
   return (
-    <NavBox>
-      <Link to="/home#home">
-        <Logo />
-      </Link>
-      <NavContact
-        handleToggle={handleToggle}
-        isOpen={isOpen}
-        tagName={"Get a quote"}
-      />
-    </NavBox>
+    <>
+      {isOpen ? (
+        <NavBox onClick={handleToggle}>
+          <Link to="/home#home">
+            <Logo />
+          </Link>
+          <NavContact
+            handleToggle={handleToggle}
+            isOpen={isOpen}
+            tagName={"Get a quote"}
+          />
+        </NavBox>
+      ) : (
+        <NavBox>
+          <Link to="/home#home">
+            <Logo />
+          </Link>
+          <NavContact
+            handleToggle={handleToggle}
+            isOpen={isOpen}
+            tagName={"Get a quote"}
+          />
+        </NavBox>
+      )}
+    </>
   );
 };
 

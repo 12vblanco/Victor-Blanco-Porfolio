@@ -72,19 +72,22 @@ const Column1 = styled.div`
   display: flex;
   flex-direction: column;
   width: fit-content;
-  justify-content: space;
+  justify-content: center;
   align-items: center;
   width: 164px;
+  height: 620px;
   @media (max-width: 600px) {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    height: fit-content;
   }
 `;
 const Column2 = styled.div`
   display: flex;
   flex-direction: column;
   width: calc(2 * 164px);
+
   @media (max-width: 600px) {
     flex-direction: column-reverse;
     width: 100%;
@@ -121,8 +124,7 @@ const RowLink = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 38px;
-  letter-spacing: -1.7px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: -18px;
   margin-left: 12px;
@@ -138,10 +140,9 @@ const SubTitle = styled.div`
 `;
 
 const Text = styled.div`
-  font-size: 15px;
+  font-size: 14.4px;
   line-height: 1.5;
   margin-top: 18px;
-  padding-right: 10px;
   padding-left: 12px;
   text-align: left;
 `;

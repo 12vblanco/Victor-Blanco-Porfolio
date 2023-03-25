@@ -47,7 +47,7 @@ const Div = styled.div`
 
 const Icon = styled.div`
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 26px;
 `;
 const IconContact = styled.div`
   margin: 10px 0;

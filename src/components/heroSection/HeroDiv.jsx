@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development.png";
-import pic1 from "../../assets/heroImg.png";
+import pic1 from "../../assets/heroImg2.jpg";
 
 const HeroDiv = () => {
   return (
@@ -102,6 +102,8 @@ const Img = styled.img`
   height: 50vw;
   max-height: 400px;
   margin: 0 40px 40px 40px;
+  border-radius: 50%;
+  object-fit: cover;
 
   @media (max-width: 870px) {
     max-width: 320px;
