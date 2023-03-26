@@ -6,7 +6,7 @@ const service = [
   {
     id: "01",
     title: "UX/UI",
-    text: "I specialise in designing bespoke & fully responsive websites that prioritize user experience and interaction, to drive engagement and conversions. Our tailored services will bring your unique vision to life, delivering high-quality designs that that are made-to-measure to meet your business or personal project's needs.",
+    text: "I specialise in designing bespoke & fully responsive websites that prioritize user experience and interaction, to drive engagement and conversions. My tailored services will bring your unique vision to life, delivering high-quality designs that that are made-to-measure to meet your business or personal project's needs.",
     img: bg1,
   },
   {
