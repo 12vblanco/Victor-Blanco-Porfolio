@@ -8,7 +8,7 @@ import CaseStudy from "./CaseStudy";
 
 const CaseStudies = () => {
   return (
-    <>
+    <Div>
       <CaseTag id="cases" />
       <SectionContainer>
         <Title>Case Studies:</Title>
@@ -18,9 +18,14 @@ const CaseStudies = () => {
           })}
         </SectionDiv>
       </SectionContainer>
-    </>
+    </Div>
   );
 };
+
+const Div = styled.div`
+  border-bottom: 1px solid #023c71;
+  width: 100vw;
+`;
 
 const CaseTag = styled.div`
   position: relative;

@@ -7,18 +7,25 @@ import ContactForm from "./Form";
 
 const PostFrom = () => {
   return (
-    <SectionContainer>
-      <FormTag id="form" />
-      <FlexDiv>
-        <Title>Fill in your details</Title>
-        <H3> to get in touch</H3>
-      </FlexDiv>
-      <SectionDiv>
-        <ContactForm />
-      </SectionDiv>
-    </SectionContainer>
+    <Div>
+      <SectionContainer>
+        <FormTag id="form" />
+        <FlexDiv>
+          <Title>Fill in your details</Title>
+          <H3> to get in touch</H3>
+        </FlexDiv>
+        <SectionDiv>
+          <ContactForm />
+        </SectionDiv>
+      </SectionContainer>
+    </Div>
   );
 };
+
+const Div = styled.div`
+  border-bottom: 1px solid #023c71;
+  width: 100vw;
+`;
 
 const FlexDiv = styled.div`
   display: flex;

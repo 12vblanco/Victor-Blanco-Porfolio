@@ -8,7 +8,7 @@ import ServicesContent from "./Services";
 
 const ServicesSection = () => {
   return (
-    <>
+    <Div>
       <ServicesTag id="services" />
 
       <SectionContainer>
@@ -31,9 +31,14 @@ const ServicesSection = () => {
           })}
         </SectionDiv>
       </SectionContainer>
-    </>
+    </Div>
   );
 };
+
+const Div = styled.div`
+  border-bottom: 1px solid #023c71;
+  width: 100vw;
+`;
 
 const ServicesTag = styled.div`
   position: relative;
