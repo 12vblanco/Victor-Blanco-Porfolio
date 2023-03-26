@@ -6,7 +6,7 @@ const ContactBtn = (props) => {
   return <Div {...rest}>{tagName}</Div>;
 };
 
-const Div = styled.div`
+const Div = styled.button`
   display: flex;
   background: #023c71;
   border-radius: 2px;
