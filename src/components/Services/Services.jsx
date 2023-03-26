@@ -49,7 +49,7 @@ const ImgDiv = styled.div`
   @media (max-width: 500px) {
     width: 80vw;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     width: 92vw;
   }
 `;
@@ -67,7 +67,7 @@ const TextDiv = styled.div`
   @media (max-width: 500px) {
     width: 80vw;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     width: 92vw;
   }
 `;

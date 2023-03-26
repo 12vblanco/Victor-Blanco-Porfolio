@@ -13,10 +13,14 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1240px;
   height: auto;
-  border-bottom: 1px solid black;
   padding: 62px 0;
   margin: 0 auto;
+
+  @media (max-width: 900px) {
+    padding: 24px 0;
+  }
 `;
 
 export default SectionContainer;

@@ -50,6 +50,9 @@ const NavBox = styled.div`
   border-style: solid;
   border-color: #023c71;
   scroll-behavior: smooth;
+  @media (max-width: 600px) {
+    width: calc(100% - 50px);
+  }
 `;
 
 export default HorizontalNav;

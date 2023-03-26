@@ -23,7 +23,7 @@ const cases = [
     skill1: "Web Design",
     skill2: "Maintenance",
     skill3: "ReactJs",
-    link: "https://theorchardbar.co.uk/",
+    link: "https://theorchardbar.co.uk",
   },
   {
     id: "02",
@@ -36,7 +36,7 @@ const cases = [
     skill1: "Web Design",
     skill2: "Maintenance",
     skill3: "Wix",
-    link: "https://www.varunabrull.com//",
+    link: "https://www.varunabrull.com",
   },
   {
     id: "03",
@@ -49,7 +49,7 @@ const cases = [
     skill1: "Upgrade",
     skill2: "Maintenance",
     skill3: "Wordpress",
-    link: "https://www.serkles.com//",
+    link: "https://www.serkles.com",
   },
   {
     id: "04",
@@ -62,7 +62,7 @@ const cases = [
     skill1: "Web Design",
     skill2: "Maintenance",
     skill3: "ReactJs",
-    link: "https://www.serkles.com//",
+    link: "https://www.victorblanco.co.uk",
   },
 ];
 

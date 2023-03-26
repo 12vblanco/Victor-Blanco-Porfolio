@@ -40,7 +40,7 @@ const Div = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     display: none;
   }
 `;

@@ -37,7 +37,7 @@ const NavBox = styled.div`
   border-style: solid;
   border-color: #023c71;
   scroll-behavior: smooth;
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     height: 50px;
   }
 `;

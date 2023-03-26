@@ -60,14 +60,14 @@ const Div = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 560px;
-  height: 390px;
+  width: 580px;
+  height: 400px;
   border: 1.6px solid black;
   margin-bottom: 60px;
   @media (max-width: 620px) {
     width: 100%;
-    max-width: 340px;
-    height: 580px;
+    max-width: 94%;
+    height: 600px;
   }
 `;
 

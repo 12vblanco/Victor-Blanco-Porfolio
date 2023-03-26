@@ -82,7 +82,7 @@ const HeroText = styled.div`
     min-width: 80vw;
     padding: 0 0 0 40px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     max-width: 100%;
     min-width: 100%;
     padding: 0 12px 0 22px;
@@ -137,7 +137,7 @@ const SolidText = styled.div`
   @media (max-width: 600px) {
     font-size: 38px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     font-size: 32px;
     margin-left: -12px;
   }
@@ -153,7 +153,7 @@ const LineText = styled.img`
   @media (max-width: 600px) {
     max-width: 280px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     max-width: 240px;
     margin-left: -12px;
   }
@@ -174,7 +174,7 @@ const P = styled.p`
   @media (max-width: 600px) {
     max-width: 80vw;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     max-width: 92vw;
     text-align: left;
     font-size: 15px;
