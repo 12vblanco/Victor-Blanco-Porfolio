@@ -24,7 +24,9 @@ const CaseStudies = () => {
 
 const Div = styled.div`
   border-bottom: 1px solid #023c71;
-  width: 100vw;
+  border-right: 1px solid #023c71;
+
+  width: 100%;
 `;
 
 const CaseTag = styled.div`

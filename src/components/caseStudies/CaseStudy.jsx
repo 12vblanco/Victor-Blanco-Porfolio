@@ -101,14 +101,21 @@ const RowLink = styled.div`
 const Title = styled.div`
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: -18px;
+  margin-bottom: 8px;
   margin-left: 12px;
   margin-top: 8%;
-  @media (max-width: 750px) {
-    margin: 2%;
+  @media (max-width: 990px) {
+    font-size: 38px;
   }
-  @media (max-width: 380px) {
-    font-size: 36px;
+  @media (max-width: 760px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 38px;
+    margin-left: 12px;
+  }
+  @media (max-width: 440px) {
+    font-size: 32px;
   }
 `;
 

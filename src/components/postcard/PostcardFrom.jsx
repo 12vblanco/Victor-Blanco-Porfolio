@@ -24,7 +24,9 @@ const PostFrom = () => {
 
 const Div = styled.div`
   border-bottom: 1px solid #023c71;
-  width: 100vw;
+  border-right: 1px solid #023c71;
+
+  width: 100%;
 `;
 
 const FlexDiv = styled.div`
@@ -42,7 +44,7 @@ const H3 = styled.h2`
   margin-top: 16px;
   margin-bottom: 30px;
   @media (max-width: 600px) {
-    margin-left: 14px;
+    margin-left: 24px;
   }
 `;
 

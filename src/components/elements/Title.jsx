@@ -15,9 +15,18 @@ const H2 = styled.h2`
   text-align: left;
   width: 482px;
   margin-bottom: -30px;
+  @media (max-width: 990px) {
+    font-size: 38px;
+  }
+  @media (max-width: 760px) {
+    font-size: 30px;
+  }
   @media (max-width: 600px) {
     font-size: 38px;
-    margin-left: 12px;
+    margin-left: 22px;
+  }
+  @media (max-width: 440px) {
+    font-size: 32px;
   }
 `;
 

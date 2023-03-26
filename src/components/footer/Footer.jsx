@@ -5,7 +5,7 @@ import SectionDiv from "../elements/SectionDiv";
 
 const Footer = () => {
   return (
-    <>
+    <Div>
       <SectionContainer>
         <H3>Let's Build Something!!</H3>
         <SectionDiv>
@@ -15,9 +15,18 @@ const Footer = () => {
           </H4>
         </SectionDiv>
       </SectionContainer>
-    </>
+    </Div>
   );
 };
+
+const Div = styled.div`
+  border-bottom: 1px solid #023c71;
+  border-right: 1px solid #023c71;
+  border-bottom: 1px solid #023c71;
+
+  width: 100%;
+  height: 100%;
+`;
 
 const H3 = styled.h3`
   font-family: "Courgette", cursive;

@@ -92,11 +92,18 @@ const Title = styled.h2`
   text-align: left;
   color: white;
   z-index: 2;
-  @media (max-width: 958px) {
-    font-size: 44px;
+  @media (max-width: 990px) {
+    font-size: 38px;
   }
-  @media (max-width: 800px) {
-    font-size: 34px;
+  @media (max-width: 760px) {
+    font-size: 30px;
+  }
+  @media (max-width: 600px) {
+    font-size: 38px;
+  }
+  @media (max-width: 440px) {
+    font-size: 32px;
+    margin-left: -12px;
   }
 `;
 
