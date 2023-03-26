@@ -4,32 +4,38 @@ import { GrInstagram } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 
-const Social = ({ flexDirection }) => {
+const Social = ({ flexDirection, isOpen }) => {
   return (
     <Div style={{ flexDirection }}>
-      <Icon>
-        <a
-          href="https://www.facebook.com/VictorBlancoWebDesign/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaFacebook />
-        </a>
-      </Icon>
-      <Icon>
-        <a
-          href="https://www.instagram.com/rigodoner/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GrInstagram />
-        </a>
-      </Icon>
-      <IconContact>
-        <Link to="/home#form">
-          <FaRegEnvelope />
-        </Link>
-      </IconContact>
+      {isOpen ? (
+        <></>
+      ) : (
+        <>
+          <Icon>
+            <a
+              href="https://www.facebook.com/VictorBlancoWebDesign/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook />
+            </a>
+          </Icon>
+          <Icon>
+            <a
+              href="https://www.instagram.com/rigodoner/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GrInstagram />
+            </a>
+          </Icon>
+          <IconContact>
+            <Link to="/home#form">
+              <FaRegEnvelope />
+            </Link>
+          </IconContact>
+        </>
+      )}
     </Div>
   );
 };

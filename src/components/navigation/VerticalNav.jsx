@@ -9,7 +9,7 @@ const VerticalNav = ({ handleToggle, isOpen }) => {
       {isOpen ? (
         <NavBox onClick={handleToggle}>
           <Burger handleToggle={handleToggle} isOpen={isOpen} />
-          <Social />
+          <Social isOpen={isOpen} />
         </NavBox>
       ) : (
         <NavBox>
