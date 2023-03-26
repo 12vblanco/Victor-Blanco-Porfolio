@@ -134,6 +134,9 @@ const TextArea = styled.textarea`
   @media (max-width: 620px) {
     width: 260px;
   }
+  @media (max-width: 360px) {
+    width: 220px;
+  }
 `;
 
 const Address = styled.div`
