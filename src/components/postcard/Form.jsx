@@ -9,7 +9,13 @@ const From = () => {
         <Text>Contact 'Postcard' Form</Text>
         <Stamp>No Stamp Required</Stamp>
       </Row>
-      <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+      <form
+        name="contact"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
+        onSubmit="submit"
+      >
         <input type="hidden" name="bot-field" />
         <Row>
           <Message>
