@@ -194,6 +194,14 @@ const Input = styled.input`
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
+  margin-left: 4px;
+
+  &:focus {
+    outline: 0.2px transparent solid;
+    height: 16px;
+    margin-left: 4px;
+    background: #f7f7f7;
+  }
 `;
 
 const CheckboxLabel = styled.label``;
