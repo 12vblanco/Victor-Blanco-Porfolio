@@ -9,6 +9,7 @@ const ContactBtn = (props) => {
 const Div = styled.button`
   display: flex;
   background: #023c71;
+  border: 1px solid #023c71;
   border-radius: 2px;
   font-weight: 600;
   font-size: 14px;
