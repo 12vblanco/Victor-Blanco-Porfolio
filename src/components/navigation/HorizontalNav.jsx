@@ -10,7 +10,7 @@ const HorizontalNav = ({ handleToggle, isOpen }) => {
     <>
       {isOpen ? (
         <NavBox onClick={handleToggle}>
-          <Link to="/home#home">
+          <Link to="/#home">
             <Logo />
           </Link>
           <NavContact
@@ -21,7 +21,7 @@ const HorizontalNav = ({ handleToggle, isOpen }) => {
         </NavBox>
       ) : (
         <NavBox>
-          <Link to="/home#home">
+          <Link to="/#home">
             <Logo />
           </Link>
           <NavContact

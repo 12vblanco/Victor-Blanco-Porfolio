@@ -183,7 +183,7 @@ const P = styled.p`
 
 const HomeTag = styled.div`
   position: relative;
-  top: -300px;
+  top: -500px;
 `;
 
 export default HeroDiv;
