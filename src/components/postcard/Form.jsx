@@ -49,7 +49,7 @@ const From = () => {
             </Checkbox>
           </div>
           <div>
-            <Btn tagName={"Send"} />
+            <Btn type="submit" tagName={"Send"} />
           </div>
         </RowBottom>
       </form>
