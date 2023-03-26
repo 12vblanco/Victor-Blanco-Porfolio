@@ -20,6 +20,10 @@
   from = '/home/#cases'
   to = '/home'
   status = 200
+[[redirects]]
+  from = '/home'
+  to = '/home'
+  status = 200
 
 
 
