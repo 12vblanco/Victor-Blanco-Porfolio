@@ -9,7 +9,7 @@ const From = () => {
         <Text>Contact 'Postcard' Form</Text>
         <Stamp>No Stamp Required</Stamp>
       </Row>
-      <form name="contact" method="POST" netlify-honeypot="bot-field">
+      <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
         <input type="hidden" name="bot-field" />
         <Row>
           <Message>
@@ -44,7 +44,7 @@ const From = () => {
             </Checkbox>
           </div>
           <div>
-            <Btn type="submit" tagName={"Send"} />
+            <Btn type="submit" name="submit" tagName={"Send"} />
           </div>
         </RowBottom>
       </form>
