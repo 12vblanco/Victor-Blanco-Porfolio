@@ -51,6 +51,9 @@ const H3 = styled.h2`
 const FormTag = styled.div`
   position: relative;
   top: -140px;
+  @media (max-width: 440px) {
+    top: -120px;
+  }
 `;
 
 export default PostFrom;

@@ -44,6 +44,9 @@ const Div = styled.div`
 const ServicesTag = styled.div`
   position: relative;
   top: -10px;
+  @media (max-width: 440px) {
+    top: -28px;
+  }
 `;
 
 export default ServicesSection;

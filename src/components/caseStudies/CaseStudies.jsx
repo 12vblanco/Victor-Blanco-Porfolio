@@ -32,6 +32,9 @@ const Div = styled.div`
 const CaseTag = styled.div`
   position: relative;
   top: 0px;
+  @media (max-width: 440px) {
+    top: -28px;
+  }
 `;
 
 export default CaseStudies;
