@@ -117,6 +117,11 @@ const Text = styled.p`
   @media (max-width: 958px) {
     font-size: 14px;
   }
+  @media (max-width: 440px) {
+    max-width: 94vw;
+    text-align: left;
+    font-size: 18px;
+  }
 `;
 
 export default Services;

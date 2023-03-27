@@ -138,6 +138,11 @@ const Text = styled.div`
   @media (max-width: 750px) {
     padding-left: 2px;
   }
+  @media (max-width: 440px) {
+    max-width: 94vw;
+    text-align: left;
+    font-size: 18px;
+  }
 `;
 
 const Img = styled.img`
