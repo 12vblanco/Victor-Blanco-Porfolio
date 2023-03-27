@@ -86,7 +86,7 @@ const From = () => {
               alignItems: "center",
             }}
           >
-            <Checkbox type="checkbox" required="required" />
+            <Checkbox type="checkbox" required="" />
             <CheckText>
               I am happy to receive emails regarding this message
               <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>*</span>
@@ -249,7 +249,6 @@ const Input = styled.input`
 
 const CheckText = styled.div``;
 
-const CheckboxLabel = styled.label``;
-const InputButton = styled.label``;
+const InputButton = styled.button``;
 
 export default From;
