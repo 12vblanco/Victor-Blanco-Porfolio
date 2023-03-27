@@ -19,8 +19,8 @@ const HeroDiv = () => {
             <LineText src={dev} />
 
             <P>
-              I create carefully planned websites for your business, <br />
-              art portfolio, or personal project with passion and attention to
+              I create carefully planned websites for your business, art
+              portfolio, or personal project with passion and attention to
               detail. The websites are specially tailored to you at an
               affordable price.
             </P>
@@ -118,6 +118,7 @@ const Img = styled.img`
     max-height: 60vw;
     min-width: 300px;
     min-height: 300px;
+    margin-top: 12px;
   }
 `;
 
@@ -161,7 +162,7 @@ const LineText = styled.img`
 
 const P = styled.p`
   text-align: left;
-  line-height: 1.2;
+  line-height: 1.5;
   max-width: 760px;
   font-size: 15px;
   margin-top: 16px;
@@ -177,7 +178,7 @@ const P = styled.p`
   @media (max-width: 440px) {
     max-width: 92vw;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 
