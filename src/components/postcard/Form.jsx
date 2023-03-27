@@ -16,7 +16,7 @@ const From = () => {
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
         onSubmit="submit"
-        action="/success"
+        action="/Success"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
