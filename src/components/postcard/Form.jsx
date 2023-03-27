@@ -247,6 +247,9 @@ const Input = styled.input`
   }
 `;
 
+const CheckText = styled.div``;
+
 const CheckboxLabel = styled.label``;
+const InputButton = styled.label``;
 
 export default From;
