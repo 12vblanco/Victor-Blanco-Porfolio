@@ -162,7 +162,7 @@ const LineText = styled.img`
 
 const P = styled.p`
   text-align: left;
-  line-height: 1.5;
+  line-height: 1.4;
   max-width: 760px;
   font-size: 15px;
   margin-top: 16px;
@@ -176,9 +176,9 @@ const P = styled.p`
     max-width: 80vw;
   }
   @media (max-width: 440px) {
-    max-width: 92vw;
+    max-width: 94vw;
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
