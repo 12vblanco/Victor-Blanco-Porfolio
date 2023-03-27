@@ -9,7 +9,7 @@ const From = () => {
         <Text>Contact 'Postcard' Form</Text>
         <Stamp>No Stamp Required</Stamp>
       </Row>
-      <form
+      {/* <form
         name="contact"
         method="post"
         data-netlify-honeypot="bot-field"
@@ -53,6 +53,49 @@ const From = () => {
             <Btn type="submit" name="submit" tagName={"Send"} />
           </div>
         </RowBottom>
+      </form> */}
+      <form
+        name="contact"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
+        onSubmit="submit"
+        action="./success"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>
+            <p>Your Name:</p> <Input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <p>Your Email:</p> <Input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <p>Message:</p> <TextArea name="message"></TextArea>
+          </label>
+        </p>
+        <p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Checkbox type="checkbox" required="required" />
+            <CheckText>
+              I am happy to receive emails regarding this message
+              <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>*</span>
+            </CheckText>
+          </div>
+        </p>
+        <p>
+          <InputButton type="submit">Send</InputButton>
+        </p>
       </form>
     </Div>
   );
