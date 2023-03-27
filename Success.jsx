@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const From = () => {
+const Success = () => {
   return (
     <Container>
       <FromContainer>
@@ -28,4 +28,4 @@ const FromContainer = styled.div`
   background: rgba(213, 221, 224, 0.4);
 `;
 
-export default From;
+export default Success;

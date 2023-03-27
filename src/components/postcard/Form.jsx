@@ -10,7 +10,14 @@ const From = () => {
         <Stamp>No Stamp Required</Stamp>
       </Row>
 
-      <form name="contact" method="post" onSubmit="submit" action="/Success/">
+      <form
+        name="contact"
+        method="post"
+        data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
+        data-netlify-success="/Success"
+        onSubmit="submit"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
         <Row>
