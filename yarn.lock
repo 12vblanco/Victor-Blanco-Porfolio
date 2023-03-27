@@ -1693,6 +1693,11 @@ util.promisify@~1.0.0:
     has-symbols "^1.0.1"
     object.getownpropertydescriptors "^2.1.0"
 
+vite-plugin-netlify@^0.0.0-alpha.0:
+  version "0.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-netlify/-/vite-plugin-netlify-0.0.0-alpha.0.tgz#c47f8a4b50740465c3b6d31c281523cb0e40e374"
+  integrity sha512-WHfUQKB4YUIn+FcYTU+RlduJdfZtl3RxpkIkWj/sSijPvp27JezErXQ8uwkUIkzW5/tx8WgKZwDocbD7o5SkXQ==
+
 vite@^4.1.0:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/vite/-/vite-4.1.4.tgz#170d93bcff97e0ebc09764c053eebe130bfe6ca0"
