@@ -2,7 +2,38 @@ import React from "react";
 import styled from "styled-components";
 import ContactBtn from "../elements/ContactBtn";
 
+import ConfirmationPage from "./ConfirmationPage";
+
 const From = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const response = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
+    });
+
+    if (response.ok) {
+      setIsSubmitted(true);
+    }
+  };
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  if (isSubmitted) {
+    return <ConfirmationPage />;
+  }
+
   return (
     <Div>
       <Row>
