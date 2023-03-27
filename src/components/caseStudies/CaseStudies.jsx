@@ -33,7 +33,7 @@ const CaseTag = styled.div`
   position: relative;
   top: 0px;
   @media (max-width: 440px) {
-    top: -28px;
+    top: -42px;
   }
 `;
 
