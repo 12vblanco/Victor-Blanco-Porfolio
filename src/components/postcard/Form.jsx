@@ -63,39 +63,43 @@ const From = () => {
         action="./success"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <p>
-          <label>
-            <p>Your Name:</p> <Input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            <p>Your Email:</p> <Input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            <p>Message:</p> <TextArea name="message"></TextArea>
-          </label>
-        </p>
-        <p>
+        <input type="hidden" name="bot-field" />
+        <Row>
+          <Message>
+            <label htmlFor="message">Message*</label>
+            <TextArea name="message" id="message" required></TextArea>
+          </Message>
+          <Address>
+            <label htmlFor="name">Name*</label>
+            <Input type="text" name="name" id="name" required />
+
+            <label htmlFor="email">Email *</label>
+            <Input type="email" name="email" id="email" required />
+
+            <label htmlFor="phone">Phone</label>
+            <Input type="tel" name="phone" id="phone" />
+          </Address>
+        </Row>
+        <RowBottom>
           <div
             style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              maxWidth: "220px",
             }}
           >
-            <Checkbox type="checkbox" required="" />
-            <CheckText>
-              I am happy to receive emails regarding this message
-              <span style={{ color: "#a52a2a", fontSize: "3.2rem" }}>*</span>
-            </CheckText>
+            <Checkbox>
+              <Tick type="checkbox" name="consent" id="consent" required />
+              <CheckboxLabel htmlFor="consent">
+                Please agree to be contacted regarding this message *
+              </CheckboxLabel>
+            </Checkbox>
           </div>
-        </p>
-        <p>
-          <InputButton type="submit">Send</InputButton>
-        </p>
+          <div>
+            <Btn type="submit" name="submit" tagName={"Send"} />
+          </div>
+        </RowBottom>
       </form>
     </Div>
   );
@@ -247,8 +251,6 @@ const Input = styled.input`
   }
 `;
 
-const CheckText = styled.div``;
-
-const InputButton = styled.button``;
+const CheckboxLabel = styled.p``;
 
 export default From;
