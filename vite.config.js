@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import netlifyPlugin from "vite-plugin-netlify";
 
 // https://vitejs.dev/config/
 export default defineConfig({
