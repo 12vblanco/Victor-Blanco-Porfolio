@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Success = (props) => {
+const From = () => {
   return (
     <Container>
       <FromContainer>
@@ -16,7 +16,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 4%; */
 `;
 
 const FromContainer = styled.div`
@@ -29,20 +28,4 @@ const FromContainer = styled.div`
   background: rgba(213, 221, 224, 0.4);
 `;
 
-const H1 = styled.h1`
-  width: 62.5rem;
-  font-size: 17px;
-  padding-left: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
-  /* margin-top: -100px; */
-  padding: 2rem;
-  border-radius: 0.8rem;
-  background: rgba(213, 221, 224, 0.4);
-
-  span {
-    font-weight: bold;
-  }
-`;
-
-export default Success;
+export default From;
