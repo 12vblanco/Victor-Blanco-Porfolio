@@ -12,11 +12,11 @@ const From = () => {
 
       <form
         name="contact"
-        method="post"
+        method="POST"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        onSubmit="submit"
-        action="/Success"
+        // onSubmit="submit"
+        action="/success"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
