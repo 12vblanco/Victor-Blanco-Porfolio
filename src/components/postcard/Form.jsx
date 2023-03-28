@@ -1,21 +1,8 @@
-import React, { useNavigate } from "react";
+import React from "react";
 import styled from "styled-components";
 import ContactBtn from "../elements/ContactBtn";
 
 const From = () => {
-  let navigate = useNavigate();
-  const submitHandler = (e) => {
-    e.preventDefault();
-    let myForm = document.getElementById("contact-form");
-    let formData = new FormData(myForm);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => navigate("/Success"))
-      .catch((error) => alert(error));
-  };
   return (
     <Div>
       <Row>
@@ -25,11 +12,11 @@ const From = () => {
 
       <form
         name="contact"
-        method="POST"
+        method="post"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        onSubmit={submitHandler}
-        action="/success"
+        onSubmit="submit"
+        action="Success"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
