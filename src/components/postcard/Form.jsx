@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useNavigate } from "react";
 import styled from "styled-components";
 import ContactBtn from "../elements/ContactBtn";
 
