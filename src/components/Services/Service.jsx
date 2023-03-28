@@ -12,13 +12,13 @@ const service = [
   {
     id: "02",
     title: "Wordpress",
-    text: "WordPress design and maintenance services, collaborating with you to create responsive and purpose-built solutions for your business. Whether you need a new website, redesign your existing one, or ongoing support, we have the expertise to deliver a customized WordPress solution that meets your needs.",
+    text: "WordPress design and maintenance services, collaborating closely with you to create responsive and purpose-built solutions for your business. Whether you need a new website, redesign your existing one, or ongoing support, I have the expertise to deliver a WordPress solution that will meet your needs.",
     img: bg2,
   },
   {
     id: "03",
     title: "Enhance",
-    text: "Maintenance & optimization services with ongoing support. Keep your website up-to-date and running smoothly thanks to cutting-edge tools and techniques to optimize performance, enhance your site's search engine ranking, and boost its conversion rate, regardless of whether your website was built by me or not. Contact us to see how we can help.",
+    text: "Maintenance & optimization services with ongoing support to keep your website update, current and running smoothly thanks to the latest tools and techniques to optimize performance, enhance your site's search engine ranking, and boost its conversion rate, it does not matter if your website was built by me or not. Send me a message to see how I can help.",
     img: bg3,
   },
 ];
