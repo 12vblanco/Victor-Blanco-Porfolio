@@ -19,8 +19,9 @@ function App() {
   return (
     <>
       <CookieConsent
+        containerClasses="cookie_container"
         style={{
-          background: "rgba(2, 60, 113, 0.8)",
+          background: "rgba(2, 60, 113, 0.9)",
           fontWeight: "500",
           height: "10vh",
           alignItems: "center",
@@ -34,14 +35,13 @@ function App() {
           background: "white",
           color: "rgb(2, 60, 113)",
         }}
-        contentStyle={{ textAlign: "left" }}
+        contentStyle={{ textAlign: "left", marginBottom: "12px" }}
       >
         This website uses cookies and third party software to monitor traffic
         anonymously and improve user experience. For more info read my{" "}
         <Span>
           <a href="/terms">terms & conditions</a>
         </Span>
-        .
       </CookieConsent>
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
       <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />

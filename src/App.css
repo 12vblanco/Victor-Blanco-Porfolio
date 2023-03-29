@@ -14,6 +14,9 @@
   #root {
     margin-left: 0px;
   }
+  .cookie_container {
+    min-height: 40vh;
+  }
 }
 
 .logo {
