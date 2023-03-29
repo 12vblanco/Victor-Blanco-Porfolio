@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaRegEnvelope } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+import { GrInstagram, GrLinkedin } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 
@@ -27,6 +27,11 @@ const Social = ({ flexDirection, isOpen }) => {
               rel="noreferrer"
             >
               <GrInstagram />
+            </a>
+          </Icon>
+          <Icon>
+            <a href="https://www.linkedin.com/in/12vblanco/" target="_blank">
+              <GrLinkedin />{" "}
             </a>
           </Icon>
           <IconContact>

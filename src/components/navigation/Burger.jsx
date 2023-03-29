@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-import { GrInstagram } from "react-icons/gr";
+import { GrInstagram, GrLinkedin } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -52,6 +52,9 @@ const Burger = ({ handleToggle, isOpen }) => {
               target="_blank"
             >
               <GrInstagram />{" "}
+            </a>
+            <a href="https://www.linkedin.com/in/12vblanco/" target="_blank">
+              <GrLinkedin />{" "}
             </a>
           </MenuItem>
         </MenuList>
