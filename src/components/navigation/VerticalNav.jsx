@@ -14,7 +14,7 @@ const VerticalNav = ({ handleToggle, isOpen }) => {
       ) : (
         <NavBox>
           <Burger handleToggle={handleToggle} isOpen={isOpen} />
-          <Social />
+          {isOpen ? "" : <Social />}
         </NavBox>
       )}
     </>

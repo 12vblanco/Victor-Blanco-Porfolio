@@ -47,7 +47,7 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 440px) {
-    /* display: none; */
+    display: none;
   }
 `;
 

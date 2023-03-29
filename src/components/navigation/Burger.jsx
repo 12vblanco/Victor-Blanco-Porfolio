@@ -1,7 +1,8 @@
 import React from "react";
+import { FaFacebook } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Social from "./Social";
 
 const Burger = ({ handleToggle, isOpen }) => {
   const handleContactClick = () => {
@@ -40,7 +41,18 @@ const Burger = ({ handleToggle, isOpen }) => {
             </a>
           </MenuItem>
           <MenuItem onClick={handleToggle}>
-            <Social flexDirection="row" />{" "}
+            <a
+              href="https://www.facebook.com/VictorBlancoWebDesign/"
+              target="_blank"
+            >
+              <FaFacebook />{" "}
+            </a>
+            <a
+              href="https://www.instagram.com/victorblancoweb/"
+              target="_blank"
+            >
+              <GrInstagram />{" "}
+            </a>
           </MenuItem>
         </MenuList>
       </OverlayMenu>
