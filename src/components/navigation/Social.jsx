@@ -22,7 +22,7 @@ const Social = ({ flexDirection, isOpen }) => {
           </Icon>
           <Icon>
             <a
-              href="https://www.instagram.com/rigodoner/"
+              href="https://www.instagram.com/victorblancoweb/"
               target="_blank"
               rel="noreferrer"
             >
@@ -47,7 +47,7 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 440px) {
-    display: none;
+    /* display: none; */
   }
 `;
 
