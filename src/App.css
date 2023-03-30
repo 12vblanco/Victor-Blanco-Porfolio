@@ -1,6 +1,7 @@
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: ${props => props.isOpen ? "none" : "smooth"}; */
 }
+
 #root {
   display: flex;
   flex-direction: column;
