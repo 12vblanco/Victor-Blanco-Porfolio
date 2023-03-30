@@ -38,13 +38,13 @@ const Div = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 405px;
+  height: auto;
   max-width: 900px;
   border: solid 1px #000;
   margin: 30px 10px 0 10px;
   padding: 0 12px;
   @media (max-width: 860px) {
-    height: auto;
+    height: fit-content;
   }
   @media (max-width: 816px) {
     flex-direction: column;
