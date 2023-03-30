@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 
 const Burger = ({ handleToggle, isOpen }) => {
