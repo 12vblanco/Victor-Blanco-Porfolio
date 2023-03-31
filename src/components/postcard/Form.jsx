@@ -51,6 +51,7 @@ const From = () => {
               maxWidth: "220px",
             }}
           >
+            <label for="consent-checkbox">Consent Checkbox</label>
             <Checkbox>
               <Tick type="checkbox" name="consent" id="consent" required />
               <CheckboxLabel htmlFor="consent">
