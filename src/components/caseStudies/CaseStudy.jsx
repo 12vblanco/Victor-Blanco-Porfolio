@@ -206,7 +206,7 @@ const Link = styled.div`
   font-size: 21px;
   margin: 6px 0 4px 14px;
   a {
-    color: #e86464;
+    color: #a41919;
   }
   @media (max-width: 900px) {
     font-size: 16px;
