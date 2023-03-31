@@ -3,7 +3,16 @@ import styled from "styled-components";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 
-const Services = ({ id, text, title, img, imgOnRight }) => {
+const Services = ({
+  id,
+  text,
+  title,
+  img,
+  imgOnRight,
+  description,
+  width,
+  height,
+}) => {
   const ImgPositioned = styled(ImgDiv)`
     order: ${imgOnRight ? 2 : 1};
   `;
@@ -23,7 +32,12 @@ const Services = ({ id, text, title, img, imgOnRight }) => {
   return (
     <SectionContainer>
       <SectionDiv id={id}>
-        <ImgPositioned img={img} alt={title} />
+        <ImgPositioned
+          img={img}
+          alt={description}
+          width={width}
+          height={height}
+        />
         <Overlay />
         <TextPositioned>
           <Title>{title}</Title>

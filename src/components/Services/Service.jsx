@@ -8,6 +8,9 @@ const service = [
     title: "UX/UI",
     text: "I specialise in designing bespoke & fully responsive websites that prioritize user experience and interaction, to drive engagement and conversions. My tailored services will bring your unique vision to life, delivering high-quality designs that that are made-to-measure to meet your business or personal project's needs.",
     img: bg1,
+    width: "640px",
+    height: "427px",
+    description: "A notepad with a paper prototype",
   },
   {
     id: "02",
