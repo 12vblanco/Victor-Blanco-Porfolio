@@ -18,9 +18,18 @@ const CaseStudy = (oneCase) => {
       <Column>
         <Row>
           <ImgDiv>
-            <Img src={oneCase.img1} />
-            <Img src={oneCase.img2} />
-            <Img src={oneCase.img3} />
+            <Img
+              src={oneCase.img1}
+              alt={"Screenshot from one of the case studies"}
+            />
+            <Img
+              src={oneCase.img2}
+              alt={"Screenshot from one of the case studies"}
+            />
+            <Img
+              src={oneCase.img3}
+              alt={"Screenshot from one of the case studies"}
+            />
           </ImgDiv>
         </Row>
         <SkillRow>

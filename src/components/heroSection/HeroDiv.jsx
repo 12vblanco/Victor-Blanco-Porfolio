@@ -11,7 +11,7 @@ const HeroDiv = () => {
       <Div>
         <DivContainer>
           <HeroImg>
-            <Img src={pic1} />
+            <Img src={pic1} alt={"Image of Victor Blanco"} />
           </HeroImg>
           <HeroText>
             <SolidText>Web Design,</SolidText>

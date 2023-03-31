@@ -23,7 +23,7 @@ const Services = ({ id, text, title, img, imgOnRight }) => {
   return (
     <SectionContainer>
       <SectionDiv id={id}>
-        <ImgPositioned img={img} />
+        <ImgPositioned img={img} alt={title} />
         <Overlay />
         <TextPositioned>
           <Title>{title}</Title>
