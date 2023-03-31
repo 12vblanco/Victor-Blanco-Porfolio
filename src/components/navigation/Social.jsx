@@ -16,6 +16,7 @@ const Social = ({ flexDirection, isOpen }) => {
               href="https://www.facebook.com/VictorBlancoWebDesign/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Victor Blanco's Facebook Page"
             >
               <FaFacebook />
             </a>
@@ -25,17 +26,27 @@ const Social = ({ flexDirection, isOpen }) => {
               href="https://www.instagram.com/victorblancoweb/"
               target="_blank"
               rel="noreferrer"
+              aria-label="Visit Victor Blanco's Instagram Page"
             >
               <GrInstagram />
             </a>
           </Icon>
           <Icon>
-            <a href="https://www.linkedin.com/in/12vblanco/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/12vblanco/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Victor Blanco's Linkedin Page"
+            >
               <GrLinkedin />{" "}
             </a>
           </Icon>
           <IconContact>
-            <Link to="/home#form">
+            <Link
+              to="/home#form"
+              rel="noreferrer"
+              aria-label="Visit Victor Blanco's Contact form"
+            >
               <FaRegEnvelope />
             </Link>
           </IconContact>
