@@ -52,9 +52,10 @@ const From = () => {
             }}
           >
             <div>
-              <label for="consent-checkbox">Consent Checkbox</label>
               <Checkbox>
                 <Tick type="checkbox" name="consent" id="consent" required />
+                <label for="consent-checkbox">Consent Checkbox</label>
+
                 <CheckboxLabel htmlFor="consent">
                   Please agree to be contacted regarding this message *
                 </CheckboxLabel>
