@@ -6,10 +6,11 @@ const Title = (props) => {
 };
 
 const H2 = styled.h2`
+  font-family: "Archivo Black", sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 52px;
+  font-size: 48px;
   letter-spacing: -1.7px;
   font-weight: 700;
   text-align: left;

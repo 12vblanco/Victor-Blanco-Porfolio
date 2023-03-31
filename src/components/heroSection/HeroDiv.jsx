@@ -123,17 +123,21 @@ const Img = styled.img`
 `;
 
 const SolidText = styled.div`
+  font-family: "Archivo Black", sans-serif;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 52px;
+  font-size: 48px;
   letter-spacing: -1.7px;
   font-weight: 700;
   @media (max-width: 990px) {
     font-size: 38px;
   }
-  @media (max-width: 760px) {
-    font-size: 30px;
+  @media (max-width: 778px) {
+    font-size: 34px;
+  }
+  @media (max-width: 643px) {
+    font-size: 32px;
   }
   @media (max-width: 600px) {
     font-size: 38px;

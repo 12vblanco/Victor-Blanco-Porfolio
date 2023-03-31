@@ -99,9 +99,10 @@ const RowLink = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 40px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 38px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: -8px;
   margin-left: 12px;
   margin-top: 8%;
   @media (max-width: 990px) {
@@ -124,9 +125,6 @@ const SubTitle = styled.div`
   letter-spacing: -1.2px;
   font-weight: 500;
   margin-left: 14px;
-  @media (max-width: 750px) {
-    margin: -6% 3% 0 3%;
-  }
 `;
 
 const Text = styled.div`

@@ -88,7 +88,8 @@ const Overlay = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 54px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 48px;
   text-align: left;
   color: white;
   z-index: 2;
