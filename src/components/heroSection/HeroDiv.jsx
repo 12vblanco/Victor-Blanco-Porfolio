@@ -16,7 +16,7 @@ const HeroDiv = () => {
           <HeroText>
             <SolidText>Web Design,</SolidText>
             <SolidText>Maintenance &</SolidText>
-            <LineText src={dev} />
+            <LineText src={dev} alt="development" />
 
             <P>
               I create carefully planned websites for your business, art
