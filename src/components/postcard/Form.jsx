@@ -51,13 +51,15 @@ const From = () => {
               maxWidth: "220px",
             }}
           >
-            <label for="consent-checkbox">Consent Checkbox</label>
-            <Checkbox>
-              <Tick type="checkbox" name="consent" id="consent" required />
-              <CheckboxLabel htmlFor="consent">
-                Please agree to be contacted regarding this message *
-              </CheckboxLabel>
-            </Checkbox>
+            <div>
+              <label for="consent-checkbox">Consent Checkbox</label>
+              <Checkbox>
+                <Tick type="checkbox" name="consent" id="consent" required />
+                <CheckboxLabel htmlFor="consent">
+                  Please agree to be contacted regarding this message *
+                </CheckboxLabel>
+              </Checkbox>
+            </div>
           </div>
           <div>
             <Btn type="submit" name="submit" tagName={"Send"} />

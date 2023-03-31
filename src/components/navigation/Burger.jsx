@@ -36,7 +36,11 @@ const Burger = ({ handleToggle, isOpen }) => {
             <MenuItem onClick={handleContactClick}>Contact</MenuItem>
           </Link>
           <MenuItem onClick={!isOpen}>
-            <a href="https://www.victorblanco.co.uk" target="_blank">
+            <a
+              href="https://www.victorblanco.co.uk"
+              target="_blank"
+              aria-label="Visit Victor Blanco's Prints Page"
+            >
               Tree Ring Prints
             </a>
           </MenuItem>
@@ -44,16 +48,22 @@ const Burger = ({ handleToggle, isOpen }) => {
             <a
               href="https://www.facebook.com/VictorBlancoWebDesign/"
               target="_blank"
+              aria-label="Visit Victor Blanco's Facebook Page"
             >
               <FaFacebook />{" "}
             </a>
             <a
               href="https://www.instagram.com/victorblancoweb/"
               target="_blank"
+              aria-label="Visit Victor Blanco's Instagram Page"
             >
               <GrInstagram />{" "}
             </a>
-            <a href="https://www.linkedin.com/in/12vblanco/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/12vblanco/"
+              target="_blank"
+              aria-label="Visit Victor Blanco's Linkedin Page"
+            >
               <GrLinkedin />{" "}
             </a>
           </MenuItem>

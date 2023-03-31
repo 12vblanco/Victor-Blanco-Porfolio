@@ -9,7 +9,7 @@ const CaseStudy = (oneCase) => {
         <Text>{oneCase.text}</Text>
         <RowLink>
           <Link>
-            <a href={oneCase.link} target="_blank">
+            <a href={oneCase.link} target="_blank" aria-label={oneCase.title}>
               {oneCase.link}
             </a>
           </Link>
