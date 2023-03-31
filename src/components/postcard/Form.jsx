@@ -26,14 +26,20 @@ const From = () => {
             <TextArea name="message" id="message" required></TextArea>
           </Message>
           <Address>
-            <label htmlFor="name">Name*</label>
-            <Input type="text" name="name" id="name" required />
+            <div>
+              <label htmlFor="name">Name*</label>
+              <Input type="text" name="name" id="name" required />
+            </div>
 
-            <label htmlFor="email">Email *</label>
-            <Input type="email" name="email" id="email" required />
+            <div>
+              <label htmlFor="email">Email *</label>
+              <Input type="email" name="email" id="email" required />
+            </div>
 
-            <label htmlFor="phone">Phone</label>
-            <Input type="tel" name="phone" id="phone" />
+            <div>
+              <label htmlFor="phone">Phone</label>
+              <Input type="tel" name="phone" id="phone" />
+            </div>
           </Address>
         </Row>
         <RowBottom>

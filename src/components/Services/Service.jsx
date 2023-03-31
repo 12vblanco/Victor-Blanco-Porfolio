@@ -12,7 +12,7 @@ const service = [
   {
     id: "02",
     title: "Wordpress",
-    text: "Wordpress design and maintenance services, collaborating closely with you to create responsive and purpose-built solutions for your business. Whether you need a new website, redesign your existing one, or ongoing support, I have the expertise to deliver a Wordpress solution that will meet your needs.",
+    text: "And other content management software design and maintenance such as Shopify or Wix, collaborating closely with you to create responsive and purpose-built solutions for your business. Whether you need a new website, redesign your existing one, or ongoing support, I have the expertise to deliver a Wordpress solution that will meet your needs.",
     img: bg2,
   },
   {
