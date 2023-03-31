@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development-min.png";
-import pic1 from "../../assets/heroImg2-min.jpg";
+import pic1 from "../../assets/heroImg-min.jpg";
 
 const HeroDiv = () => {
   return (
