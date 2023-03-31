@@ -133,10 +133,10 @@ const SolidText = styled.div`
   @media (max-width: 990px) {
     font-size: 38px;
   }
-  @media (max-width: 778px) {
+  @media (max-width: 791px) {
     font-size: 34px;
   }
-  @media (max-width: 643px) {
+  @media (max-width: 658px) {
     font-size: 32px;
   }
   @media (max-width: 600px) {
@@ -151,7 +151,10 @@ const LineText = styled.img`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 280px;
+  max-width: 320px;
+  @media (max-width: 992px) {
+    max-width: 260px;
+  }
   @media (max-width: 760px) {
     max-width: 200px;
   }
