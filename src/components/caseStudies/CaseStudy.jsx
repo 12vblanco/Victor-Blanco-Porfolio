@@ -20,7 +20,9 @@ const CaseStudy = (oneCase) => {
           <ImgDiv>
             <Img
               src={oneCase.img1}
-              alt={"Screenshot from one of the case studies"}
+              alt={oneCase.description1}
+              width={oneCase.width}
+              height={oneCase.height}
             />
             <Img
               src={oneCase.img2}
