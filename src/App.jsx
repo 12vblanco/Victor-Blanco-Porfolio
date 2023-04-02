@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CookieConsent from "react-cookie-consent";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
@@ -9,8 +9,19 @@ import VerticalNav from "./components/navigation/VerticalNav";
 import Home from "./components/pages/Home";
 import Terms from "./components/pages/Terms";
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 function App() {
   const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -52,9 +63,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/terms" element={<Terms />} />
+        <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
       </Routes>
-      <Footer />
+      <Footer scrollToTop={scrollToTop} />
     </>
   );
 }

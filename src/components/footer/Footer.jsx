@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 
-const Footer = () => {
+const Footer = (scrollToTop) => {
   return (
     <Div>
       <SectionContainer>
@@ -15,7 +15,9 @@ const Footer = () => {
             <span>&nbsp;&nbsp;</span>
           </H4>
           <Terms>
-            <Link to="/terms">Terms & Conditions</Link>
+            <Link to="/terms" onClick={scrollToTop}>
+              Terms & Conditions
+            </Link>
           </Terms>
         </SectionDiv>
       </SectionContainer>

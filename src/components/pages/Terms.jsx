@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ContactBtn from "../elements/ContactBtn";
 
-const Terms = () => {
+const Terms = (scrollToTop) => {
   return (
     <Div>
       <H1 id="termsTop">Terms and Conditions</H1>
@@ -90,7 +90,7 @@ const Terms = () => {
       </P>
       <Btn>
         <Link to="/home">
-          <ContactBtn tagName={"Go back"} />
+          <ContactBtn onClick={scrollToTop} tagName={"Go back"} />
         </Link>
       </Btn>
     </Div>
