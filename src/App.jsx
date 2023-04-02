@@ -3,7 +3,6 @@ import CookieConsent from "react-cookie-consent";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
-import ScrollToTop from "./components/elements/ScrollToTop";
 import Footer from "./components/footer/Footer";
 import HorizontalNav from "./components/navigation/HorizontalNav";
 import VerticalNav from "./components/navigation/VerticalNav";
@@ -50,7 +49,6 @@ function App() {
       </CookieConsent>
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
       <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />{" "}
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
