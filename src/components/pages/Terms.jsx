@@ -5,13 +5,13 @@ import ContactBtn from "../elements/ContactBtn";
 
 const Terms = () => {
   return (
-    <Div id="termsTop">
-      <H1>Terms and Conditions</H1>
-      <P>
+    <Div>
+      <H1 id="termsTop">Terms and Conditions</H1>
+      <H4>
         Welcome to Victor Blanco Web. Before using our website, please read the
         following terms and conditions carefully. By using our website, you
         agree to be bound by these terms and conditions.
-      </P>
+      </H4>
       <ol>
         <li>
           Use of Cookies:
@@ -100,9 +100,15 @@ const Terms = () => {
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 65%;
   max-width: 800px;
   text-align: left;
+  @media (max-width: 868px) {
+    padding: 0 22px 22px 42px;
+  }
+  @media (max-width: 440px) {
+    max-width: 90%;
+    padding: 18px;
+  }
 `;
 
 const Btn = styled.h1`
@@ -134,7 +140,13 @@ const H1 = styled.h1`
   }
   @media (max-width: 440px) {
     font-size: 32px;
+    margin: 8px 0;
   }
+`;
+const H4 = styled.h4`
+  margin-top: 20px;
+  margin-bottom: 22px;
+  font-weight: 500;
 `;
 const P = styled.p`
   margin-top: 18px;

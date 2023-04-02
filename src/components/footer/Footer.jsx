@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import ScrollToTop from "../elements/ScrollToTop";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 
 const Footer = () => {
   return (
     <Div>
+      <ScrollToTop />
+
       <SectionContainer>
         <H3>Let's Build Something!!</H3>
         <SectionDiv>
@@ -15,7 +18,9 @@ const Footer = () => {
             <span>&nbsp;&nbsp;</span>
           </H4>
           <Terms>
-            <Link to="/terms">Terms & Conditions</Link>
+            <ScrollToTop />
+
+            <Link to="/terms#termsTop">Terms & Conditions</Link>
           </Terms>
         </SectionDiv>
       </SectionContainer>
