@@ -15,7 +15,6 @@ const From = () => {
         method="post"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        onSubmit="submit"
         action="Success"
       >
         <input type="hidden" name="form-name" value="contact" />
@@ -53,7 +52,7 @@ const From = () => {
           >
             <div>
               <Checkbox>
-                <label for="consent">
+                <label htmlFor="consent">
                   <CheckboxLabel>
                     Please agree to be contacted regarding this message *
                   </CheckboxLabel>

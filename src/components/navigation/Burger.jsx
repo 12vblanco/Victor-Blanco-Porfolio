@@ -17,6 +17,9 @@ const Burger = ({ handleToggle, isOpen }) => {
     handleToggle();
     window.location.href = "/home#services";
   };
+  const handlePrintsClick = () => {
+    handleToggle();
+  };
   return (
     <>
       <BurgerIcon className={isOpen ? "open" : "closed"} onClick={handleToggle}>
@@ -35,7 +38,7 @@ const Burger = ({ handleToggle, isOpen }) => {
           <Link>
             <MenuItem onClick={handleContactClick}>Contact</MenuItem>
           </Link>
-          <MenuItem onClick={!isOpen}>
+          <MenuItem onClick={handlePrintsClick}>
             <a
               href="https://www.victorblanco.co.uk"
               target="_blank"
