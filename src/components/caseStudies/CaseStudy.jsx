@@ -205,9 +205,7 @@ const Link = styled.div`
   cursor: pointer;
   font-size: 21px;
   margin: 6px 0 4px 14px;
-  a {
-    color: #a41919;
-  }
+
   @media (max-width: 900px) {
     font-size: 16px;
   }

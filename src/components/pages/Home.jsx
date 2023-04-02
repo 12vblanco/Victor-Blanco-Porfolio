@@ -7,7 +7,7 @@ import ServicesSection from "../Services/ServicesSection";
 const Home = () => {
   return (
     <>
-      <HeroDiv />
+      <HeroDiv id="homeTop" />
       <ServicesSection />
       <CaseStudies />
       <PostCardFrom />

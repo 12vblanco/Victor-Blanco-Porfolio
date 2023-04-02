@@ -14,7 +14,7 @@ const H2 = styled.h2`
   letter-spacing: -1.7px;
   font-weight: 700;
   text-align: left;
-  width: 482px;
+  /* width: 482px; */
   margin-bottom: -30px;
   @media (max-width: 990px) {
     font-size: 38px;

@@ -1,11 +1,14 @@
 import { useState } from "react";
 import CookieConsent from "react-cookie-consent";
+import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
+import ScrollToTop from "./components/elements/ScrollToTop";
 import Footer from "./components/footer/Footer";
 import HorizontalNav from "./components/navigation/HorizontalNav";
 import VerticalNav from "./components/navigation/VerticalNav";
 import Home from "./components/pages/Home";
+import Terms from "./components/pages/Terms";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -46,8 +49,13 @@ function App() {
         </Span>
       </CookieConsent>
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
-      <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />
-      <Home />
+      <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />{" "}
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
       <Footer />
     </>
   );

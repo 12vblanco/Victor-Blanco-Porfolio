@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
@@ -13,6 +14,9 @@ const Footer = () => {
             Victor Blanco 2019 - {new Date().getFullYear()} &copy;
             <span>&nbsp;&nbsp;</span>
           </H4>
+          <Terms>
+            <Link to="/terms">Terms & Conditions</Link>
+          </Terms>
         </SectionDiv>
       </SectionContainer>
     </Div>
@@ -44,6 +48,9 @@ const H4 = styled.div`
   width: 100%;
   font-size: 14px;
   margin-top: 10%;
+`;
+const Terms = styled.div`
+  font-size: 14px;
 `;
 
 export default Footer;
