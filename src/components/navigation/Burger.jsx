@@ -185,7 +185,7 @@ const OverlayMenu = styled.div`
   @media (max-width: 600px) {
     margin-left: 0;
     width: 100%;
-  } ;
+  }
 `;
 
 const MenuList = styled.ul`
