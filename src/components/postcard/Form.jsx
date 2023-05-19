@@ -16,7 +16,7 @@ const From = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(new FormData(form)).toString(),
     })
-      .then(() => history.push("./Success"))
+      .then(() => history.push("/Success"))
       .catch((error) => alert(error));
   };
 
