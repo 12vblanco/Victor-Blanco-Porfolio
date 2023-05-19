@@ -64,8 +64,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
-        <Route path="/Success" component={Success} />
-        ``
+        <Route path="/Success" component={<Success />} />
       </Routes>
       <Footer scrollToTop={scrollToTop} />
     </>
