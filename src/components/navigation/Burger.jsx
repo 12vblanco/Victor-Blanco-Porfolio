@@ -128,7 +128,7 @@ const BurgerIconLines = styled.span`
   transform: translate(-50%, -50%);
   height: 5px;
   width: 30px;
-  background-color: #023c71;
+  background-color: ${CONSTANTS.COLOUR.darkBlue};
   transition: all 0.3s ease-in-out;
 
   &::before,
@@ -138,7 +138,7 @@ const BurgerIconLines = styled.span`
     position: absolute;
     height: 4px;
     width: 30px;
-    background-color: #023c71;
+    background-color: ${CONSTANTS.COLOUR.darkBlue};
     transition: all 0.3s ease-in-out;
   }
 
@@ -173,7 +173,7 @@ const OverlayMenu = styled.div`
   left: 0;
   width: calc(100% - 50px);
   height: 100vh;
-  background: #fff;
+  background: ${CONSTANTS.COLOUR.white};
   padding-right: 15px;
   margin-left: 50px;
   margin-top: 50px;
@@ -204,7 +204,7 @@ const MenuItem = styled.li`
   font-weight: 700;
   letter-spacing: -2.8px;
   margin: 20px;
-  color: #023c71;
+  color: ${CONSTANTS.COLOUR.darkBlue};
   transition: all 0.5 linear;
   @media (max-width: 600px) {
     font-size: 40px;
@@ -218,7 +218,7 @@ const MenuItem = styled.li`
     letter-spacing: -1.7px;
     font-weight: 700;
     margin: 20px;
-    color: #023c71;
+    color: ${CONSTANTS.COLOUR.darkBlue};
     transition: all 0.5 linear;
     @media (max-width: 600px) {
       font-size: 40px;

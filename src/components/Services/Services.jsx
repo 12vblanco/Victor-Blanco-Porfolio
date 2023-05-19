@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 
@@ -103,18 +104,18 @@ const Overlay = styled.div`
 
 const Title = styled.h2`
   font-family: "Archivo Black", sans-serif;
-  font-size: 48px;
+  font-size: ${CONSTANTS.FONT_SIZE.giant};
   text-align: left;
   color: white;
   z-index: 2;
   @media (max-width: 990px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 760px) {
     font-size: 30px;
   }
   @media (max-width: 600px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 440px) {
     font-size: 32px;
@@ -130,7 +131,7 @@ const Text = styled.p`
   letter-spacing: 0.6px;
   z-index: 2;
   @media (max-width: 958px) {
-    font-size: 14px;
+    font-size: ${CONSTANTS.FONT_SIZE.sm};
   }
   @media (max-width: 440px) {
     max-width: 94vw;

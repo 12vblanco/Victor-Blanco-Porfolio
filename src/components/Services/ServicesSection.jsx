@@ -36,8 +36,8 @@ const ServicesSection = () => {
 };
 
 const Div = styled.div`
-  border-bottom: 1px solid #023c71;
-  border-right: 1px solid #023c71;
+  border-bottom: 1px solid ${CONSTANTS.COLOUR.darkBlue};
+  border-right: 1px solid ${CONSTANTS.COLOUR.darkBlue};
   width: 100%;
 `;
 

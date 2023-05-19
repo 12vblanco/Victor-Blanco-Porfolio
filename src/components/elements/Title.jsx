@@ -10,20 +10,20 @@ const H2 = styled.h2`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 48px;
+  font-size: ${CONSTANTS.FONT_SIZE.giant};
   letter-spacing: -1.7px;
   font-weight: 700;
   text-align: left;
   width: 482px;
   margin-bottom: -30px;
   @media (max-width: 990px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 760px) {
     font-size: 30px;
   }
   @media (max-width: 600px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
     margin-left: 22px;
   }
   @media (max-width: 440px) {

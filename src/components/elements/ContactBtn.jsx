@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CONSTANTS from "./Constants";
 
 const ContactBtn = (props) => {
   const { tagName, ...rest } = props;
@@ -8,12 +9,12 @@ const ContactBtn = (props) => {
 
 const Div = styled.button`
   display: flex;
-  background: #023c71;
-  border: 1px solid #023c71;
+  background: ${CONSTANTS.COLOUR.darkBlue};
+  border: 1px solid ${CONSTANTS.COLOUR.darkBlue};
   border-radius: 2px;
   font-weight: 600;
-  font-size: 14px;
-  color: #fff;
+  font-size: ${CONSTANTS.FONT_SIZE.sm};
+  color: ${CONSTANTS.COLOUR.white};
   width: 110px;
   height: 50px;
   justify-content: center;

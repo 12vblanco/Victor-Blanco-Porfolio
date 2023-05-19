@@ -123,19 +123,19 @@ const H1 = styled.h1`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  font-size: 48px;
+  font-size: ${CONSTANTS.FONT_SIZE.giant};
   letter-spacing: -1.7px;
   font-weight: 700;
   text-align: left;
   margin: 30px 0;
   @media (max-width: 990px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 760px) {
     font-size: 30px;
   }
   @media (max-width: 600px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
     margin-left: 22px;
   }
   @media (max-width: 440px) {

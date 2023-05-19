@@ -1,6 +1,6 @@
 import React from "react";
 
-function ConfirmationPage() {
+function Success() {
   return (
     <div>
       <h1>Thank you for submitting the form!</h1>
@@ -9,4 +9,4 @@ function ConfirmationPage() {
   );
 }
 
-export default ConfirmationPage;
+export default Success;

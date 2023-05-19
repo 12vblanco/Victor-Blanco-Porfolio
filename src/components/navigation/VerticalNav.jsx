@@ -30,12 +30,12 @@ const NavBox = styled.div`
   top: 0;
   left: 0px;
   height: 100vh;
-  background: #fff;
+  background: ${CONSTANTS.COLOUR.white};
   width: 50px;
   z-index: 20;
   border-width: 0px 1px 1px 0px;
   border-style: solid;
-  border-color: #023c71;
+  border-color: ${CONSTANTS.COLOUR.darkBlue};
   scroll-behavior: smooth;
   @media (max-width: 440px) {
     height: 50px;

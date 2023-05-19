@@ -1,8 +1,25 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 import ContactBtn from "../elements/ContactBtn";
 
 const From = () => {
+  let history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let form = e.target;
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    })
+      .then(() => history.push("./Success"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <Div>
       <Row>
@@ -15,7 +32,7 @@ const From = () => {
         method="post"
         data-netlify-honeypot="bot-field"
         data-netlify-recaptcha="true"
-        action="Success"
+        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />
@@ -96,7 +113,7 @@ const Row = styled.div`
 
 const Text = styled.p`
   max-width: 80px;
-  font-size: 14px;
+  font-size: ${CONSTANTS.FONT_SIZE.sm};
   text-align: left;
   line-height: 1.1;
   font-weight: 500;
@@ -119,7 +136,7 @@ const Stamp = styled.div`
   height: 86px;
   border: solid 1.6px black;
   text-align: left;
-  font-size: 10px;
+  font-size: ${CONSTANTS.FONT_SIZE.tiny};
   padding: 6px;
   @media (max-width: 620px) {
     top: 20px;
@@ -143,7 +160,7 @@ const TextArea = styled.textarea`
   width: 220px;
   height: 180px;
   border: 0.1px solid black;
-  background: #fff;
+  background: ${CONSTANTS.COLOUR.white};
   @media (max-width: 620px) {
     width: 260px;
   }
@@ -157,7 +174,7 @@ const Address = styled.div`
   width: 50%;
   text-align: left;
   padding: 12px;
-  font-size: 14px;
+  font-size: ${CONSTANTS.FONT_SIZE.sm};
   border: solid;
   border-width: 0 0 0 2px;
   @media (max-width: 620px) {
@@ -182,7 +199,7 @@ const Checkbox = styled.div`
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  font-size: 11px;
+  font-size: ${CONSTANTS.FONT_SIZE.tiny};
   line-height: 1.1;
   margin-left: 12px;
 `;
@@ -200,7 +217,7 @@ const Btn = styled(ContactBtn)`
 
 const Input = styled.input`
   border-bottom: 0.1px solid black;
-  background: #fff;
+  background: ${CONSTANTS.COLOUR.white};
   margin-top: 16px;
   border-top-style: hidden;
   border-right-style: hidden;

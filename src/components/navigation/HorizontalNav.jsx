@@ -42,13 +42,13 @@ const NavBox = styled.div`
   align-items: center;
   top: 0;
   left: 50px;
-  background: #fff;
+  background: ${CONSTANTS.COLOUR.white};
   width: calc(100% - 50px);
   height: 50px;
   z-index: 21;
   border-width: 0px 1px 1px 0px;
   border-style: solid;
-  border-color: #023c71;
+  border-color: ${CONSTANTS.COLOUR.darkBlue};
   scroll-behavior: smooth;
   @media (max-width: 600px) {
     width: calc(100% - 50px);

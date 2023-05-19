@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 
 const CaseStudy = (oneCase) => {
   return (
@@ -109,19 +110,19 @@ const RowLink = styled.div`
 
 const Title = styled.div`
   font-family: "Archivo Black", sans-serif;
-  font-size: 38px;
+  font-size: ${CONSTANTS.FONT_SIZE.super};
   font-weight: 700;
   margin-bottom: -8px;
   margin-left: 12px;
   margin-top: 8%;
   @media (max-width: 990px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 760px) {
     font-size: 30px;
   }
   @media (max-width: 600px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
     margin-left: 12px;
   }
   @media (max-width: 440px) {
@@ -155,7 +156,7 @@ const Text = styled.div`
 const Img = styled.img`
   width: 140px;
   margin: 22px 6px;
-  border: 1px #023c71 solid;
+  border: 1px ${CONSTANTS.COLOUR.darkBlue} solid;
   object-fit: contain;
 
   @media (max-width: 870px) {
@@ -178,12 +179,12 @@ const Skill = styled.div`
   height: 40px;
   padding: 8px;
   margin: 0 6px;
-  border: 1px solid #000;
+  border: 1px solid ${CONSTANTS.COLOUR.darkBlue};
   margin-bottom: 18px;
   text-align: center;
   @media (max-width: 870px) {
     width: 30%;
-    font-size: 14px;
+    font-size: ${CONSTANTS.FONT_SIZE.sm};
   }
   @media (max-width: 816px) {
     width: 33%;

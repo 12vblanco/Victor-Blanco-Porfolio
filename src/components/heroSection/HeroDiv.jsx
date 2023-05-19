@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import dev from "../../assets/Development-min.png";
 import pic1 from "../../assets/heroImg-min.jpg";
+import CONSTANTS from "../elements/Constants";
 
 const HeroDiv = () => {
   return (
@@ -127,11 +128,11 @@ const SolidText = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 48px;
+  font-size: ${CONSTANTS.FONT_SIZE.giant};
   letter-spacing: -1.7px;
   font-weight: 700;
   @media (max-width: 990px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 791px) {
     font-size: 34px;
@@ -140,7 +141,7 @@ const SolidText = styled.div`
     font-size: 32px;
   }
   @media (max-width: 600px) {
-    font-size: 38px;
+    font-size: ${CONSTANTS.FONT_SIZE.super};
   }
   @media (max-width: 440px) {
     font-size: 32px;
@@ -177,7 +178,7 @@ const P = styled.p`
     max-width: 40vw;
   }
   @media (max-width: 760px) {
-    font-size: 14px;
+    font-size: ${CONSTANTS.FONT_SIZE.sm};
   }
   @media (max-width: 600px) {
     max-width: 80vw;

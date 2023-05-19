@@ -5,6 +5,7 @@ import SectionDiv from "../elements/SectionDiv";
 import Title from "../elements/Title";
 import cases from "./Cases";
 import CaseStudy from "./CaseStudy";
+import CONSTANTS from "../elements/Constants";
 
 const CaseStudies = () => {
   return (
@@ -23,8 +24,8 @@ const CaseStudies = () => {
 };
 
 const Div = styled.div`
-  border-bottom: 1px solid #023c71;
-  border-right: 1px solid #023c71;
+  border-bottom: 1px solid ${CONSTANTS.COLOUR.darkBlue};
+  border-right: 1px solid ${CONSTANTS.COLOUR.darkBlue};
 
   width: 100%;
 `;
