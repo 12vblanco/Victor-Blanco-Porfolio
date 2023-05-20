@@ -9,7 +9,6 @@ import VerticalNav from "./components/navigation/VerticalNav";
 import Home from "./components/pages/Home";
 import Terms from "./components/pages/Terms";
 import Success from "./components/postcard/Success";
-
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -66,7 +65,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
-          <Route path="/Success" component={<Success />} />
+          <Route path="/Success" element={<Success />} />{" "}
         </Switch>
       </Router>
       <Footer scrollToTop={scrollToTop} />
