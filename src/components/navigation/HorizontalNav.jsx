@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import Logo from "./Logo";
-
+import CONSTANTS from "../elements/Constants";
 import NavContact from "./NavContact";
 
 const HorizontalNav = ({ handleToggle, isOpen }) => {

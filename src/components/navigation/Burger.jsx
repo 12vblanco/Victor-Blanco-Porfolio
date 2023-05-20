@@ -3,6 +3,7 @@ import { FaFacebook } from "react-icons/fa";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 
 const Burger = ({ handleToggle, isOpen }) => {
   const handleContactClick = () => {

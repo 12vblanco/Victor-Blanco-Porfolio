@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CONSTANTS from "./Constants";
 
 const Title = (props) => {
   return <H2>{props.children}</H2>;

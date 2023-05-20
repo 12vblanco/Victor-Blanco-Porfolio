@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
 import Social from "./Social";
+import CONSTANTS from "../elements/Constants";
 
 const VerticalNav = ({ handleToggle, isOpen }) => {
   return (
