@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CookieConsent from "react-cookie-consent";
-import { Route, Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -60,13 +60,14 @@ function App() {
       </CookieConsent>
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
       <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />{" "}
-      <Routes>
+      <>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
         <Route path="/Success" component={<Success />} />
-      </Routes>
+      </>
       <Footer scrollToTop={scrollToTop} />
+      ``
     </>
   );
 }
