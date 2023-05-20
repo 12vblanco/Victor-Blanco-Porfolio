@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import CookieConsent from "react-cookie-consent";
-import { Route } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
 import Footer from "./components/footer/Footer";
@@ -8,6 +8,7 @@ import HorizontalNav from "./components/navigation/HorizontalNav";
 import VerticalNav from "./components/navigation/VerticalNav";
 import Home from "./components/pages/Home";
 import Terms from "./components/pages/Terms";
+import Success from "./components/postcard/Success";
 
 function scrollToTop() {
   window.scrollTo({
@@ -60,12 +61,14 @@ function App() {
       </CookieConsent>
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
       <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />{" "}
-      <>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
-        <Route path="/Success" component={<Success />} />
-      </>
+      <Router>
+        <Switch>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
+          <Route path="/Success" component={<Success />} />
+        </Switch>
+      </Router>
       <Footer scrollToTop={scrollToTop} />
       ``
     </>
