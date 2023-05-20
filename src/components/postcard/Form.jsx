@@ -4,7 +4,7 @@ import styled from "styled-components";
 import CONSTANTS from "../elements/Constants";
 import ContactBtn from "../elements/ContactBtn";
 
-const From = () => {
+const Form = () => {
   let history = useHistory();
 
   const handleSubmit = (e) => {
@@ -86,6 +86,7 @@ const From = () => {
     </Div>
   );
 };
+
 const Div = styled.div`
   position: relative;
   display: flex;
@@ -235,4 +236,4 @@ const Input = styled.input`
 
 const CheckboxLabel = styled.p``;
 
-export default From;
+export default Form;
