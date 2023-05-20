@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 import Title from "../elements/Title";
