@@ -235,4 +235,4 @@ const Input = styled.input`
 
 const CheckboxLabel = styled.p``;
 
-export default From;
+export default Form;
