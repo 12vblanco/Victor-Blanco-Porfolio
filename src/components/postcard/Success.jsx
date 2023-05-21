@@ -5,7 +5,7 @@ import ContactBtn from "../../components/elements/ContactBtn";
 function Success() {
   const handleBackHome = () => {
     // handleToggle();
-    window.location.href = "/home";
+    window.location.href = "/";
   };
   return (
     <Div>
