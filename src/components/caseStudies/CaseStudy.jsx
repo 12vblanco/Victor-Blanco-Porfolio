@@ -20,16 +20,19 @@ const CaseStudy = (oneCase) => {
         <Row>
           <ImgDiv>
             <Img
-              src={oneCase.img1}
-              alt={"Screenshot from one of the case studies"}
+              src={oneCase.img1.src}
+              srcSet={oneCase.img1.srcSet}
+              alt={oneCase.img1.alt}
             />
             <Img
-              src={oneCase.img2}
-              alt={"Screenshot from one of the case studies"}
+              src={oneCase.img2.src}
+              srcSet={oneCase.img2.srcSet}
+              alt={oneCase.img2.alt}
             />
             <Img
-              src={oneCase.img3}
-              alt={"Screenshot from one of the case studies"}
+              src={oneCase.img3.src}
+              srcSet={oneCase.img3.srcSet}
+              alt={oneCase.img3.alt}
             />
           </ImgDiv>
         </Row>

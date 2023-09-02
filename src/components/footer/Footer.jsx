@@ -36,7 +36,7 @@ const Div = styled.div`
 `;
 
 const H3 = styled.h3`
-  font-family: "Courgette", cursive;
+  font-family: var(--secondary-font);
   font-size: ${CONSTANTS.FONT_SIZE.giant};
   font-weight: 100;
   @media (max-width: 660px) {
