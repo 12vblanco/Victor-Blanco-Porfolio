@@ -1,8 +1,9 @@
 import React from "react";
+import ServicesSection from "../Services/ServicesSection";
 import CaseStudies from "../caseStudies/CaseStudies";
 import HeroDiv from "../heroSection/HeroDiv";
 import PostCardFrom from "../postcard/PostcardFrom";
-import ServicesSection from "../Services/ServicesSection";
+import References from "../references/References";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <ServicesSection />
       <CaseStudies />
       <PostCardFrom />
+      <References />
     </>
   );
 };
