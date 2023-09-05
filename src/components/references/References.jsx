@@ -82,6 +82,9 @@ const Img = styled.img`
   max-width: 26vw;
   min-width: 20rem;
   padding: 16px;
+  @media (max-width: 520px) {
+    max-width: 100%;
+  }
 `;
 
 export default References;
