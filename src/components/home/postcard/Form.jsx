@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import ContactBtn from "../../elements/ContactBtn";
 
-const Form = (scrollToTop) => {
+const Form = (props) => {
   let navigate = useNavigate();
 
   const submitHandler = (e) => {
     e.preventDefault();
+
     let myForm = document.getElementById("contact-form");
     let formData = new FormData(myForm);
     fetch("/", {
@@ -15,7 +16,10 @@ const Form = (scrollToTop) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => navigate("/Success"))
+      .then(() => {
+        navigate("/Success");
+        props.scrollToTop();
+      })
       .catch((error) => alert(error));
   };
 
@@ -79,12 +83,7 @@ const Form = (scrollToTop) => {
             </div>
           </div>
           <div>
-            <Btn
-              type="submit"
-              name="submit"
-              tagName={"Send"}
-              onClick={scrollToTop}
-            />
+            <Btn type="submit" name="submit" tagName={"Send"} />
           </div>
         </RowBottom>
       </form>
@@ -92,7 +91,6 @@ const Form = (scrollToTop) => {
   );
 };
 const Div = styled.div`
-  /* background-image: url(src/assets/postcard_bg.jpg); */
   position: relative;
   display: flex;
   flex-direction: column;
