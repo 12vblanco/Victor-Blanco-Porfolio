@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Confetti from "react-confetti";
 import styled from "styled-components";
-import pic1 from "../../assets/me_bike.jpg";
+import pic1 from "../../../public/me_bike.jpg";
 import pic2 from "../../assets/napier.jpg";
 import ContactBtn from "../elements/ContactBtn";
 import SectionContainer from "../elements/SectionContainer";
