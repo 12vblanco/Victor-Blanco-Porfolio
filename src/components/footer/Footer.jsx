@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import CONSTANTS from "../elements/Constants";
 import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 
@@ -9,17 +8,15 @@ const Footer = (scrollToTop) => {
   return (
     <Div>
       <SectionContainer>
-        <H3>Let's Build Something!!</H3>
+        <H1>Let's build something!</H1>
         <SectionDiv>
-          <H4>
+          <Copy>
             Victor Blanco 2019 - {new Date().getFullYear()} &copy;
             <span>&nbsp;&nbsp;</span>
-          </H4>
-          <Terms>
             <Link to="/terms" onClick={scrollToTop}>
               Terms & Conditions
             </Link>
-          </Terms>
+          </Copy>
         </SectionDiv>
       </SectionContainer>
     </Div>
@@ -27,33 +24,35 @@ const Footer = (scrollToTop) => {
 };
 
 const Div = styled.div`
-  border-bottom: 1px solid ${CONSTANTS.COLOUR.darkBlue};
-  border-right: 1px solid ${CONSTANTS.COLOUR.darkBlue};
-  border-bottom: 1px solid ${CONSTANTS.COLOUR.darkBlue};
-
+  /* border-bottom: 1px solid var(--blue); */
+  border-right: 1px solid var(--blue);
+  border-top: 1px solid var(--blue);
   width: 100%;
   height: 100%;
+  padding: 0 0.4rem;
+  margin: 4rem 0;
 `;
 
-const H3 = styled.h3`
-  font-family: var(--secondary-font);
-  font-size: ${CONSTANTS.FONT_SIZE.giant};
+const H1 = styled.h1`
+  font-family: var(--hw-font);
   font-weight: 100;
+  letter-spacing: 0;
   @media (max-width: 660px) {
-    font-size: 26px;
+    font-size: 34px;
   }
 `;
 
-const H4 = styled.div`
+const Copy = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
   width: 100%;
-  font-size: ${CONSTANTS.FONT_SIZE.sm};
+  font-size: 13px;
   margin-top: 10%;
-`;
-const Terms = styled.div`
-  font-size: ${CONSTANTS.FONT_SIZE.sm};
+  margin-bottom: -8%;
+  @media (max-width: 440px) {
+    font-size: 11px;
+  }
 `;
 
 export default Footer;

@@ -19,7 +19,7 @@ const Div = styled.div`
   align-items: center;
 `;
 const LogoImg = styled.div`
-  font-family: "Archivo Black", sans-serif;
+  font-family: var(--header-font), sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -32,12 +32,20 @@ const LogoImg = styled.div`
   @media (max-width: 480px) {
     padding-left: 10px;
   }
+  @media (max-width: 322px) {
+    padding-left: 20px;
+    font-size: 18px;
+  }
 `;
 const LogoText = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
   min-width: 120px;
+  @media (max-width: 322px) {
+    min-width: 100px;
+    font-size: 14px;
+  }
 `;
 
 export default Logo;

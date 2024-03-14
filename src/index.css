@@ -1,3 +1,66 @@
+/* Fonts */
+/* Archivo Black */
+@font-face {
+  font-family: "Archivo Black";
+  src: url("./assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define Courgette */
+@font-face {
+  font-family: "Courgette";
+  src: url("./assets/fonts/Courgette/Courgette-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Poppins for weights 300 to 700 */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("src/assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* resets  */
 * {
   margin: 0;
   padding: 0;
@@ -6,54 +69,63 @@
 }
 
 :root {
-  --primary-font: "Poppins", Helvetica, sans-serif;
-  --secondary-font: "Courgette", cursive;
-  --heading-font: "Archivo Black", sans-serif;
+  --white: #fff;
+  --blue: #023c71;
+  --link-blue: #024e95;
 
-  font-family: var(--primary-font);
-  line-height: 1.5;
-  font-weight: 400;
-  color: #023c71;
+  --text-font: "Poppins", sans-serif;
+  --hw-font: "Dancing Script", cursive;
+  --header-font: "Archivo Black", sans-serif;
+
+  color: var(--blue);
 }
 
-body,
-h1,
-h2,
-h3,
-p,
+/* Body styles */
+body {
+  min-width: 300px;
+  min-height: 100vh;
+  background: var(--white);
+  color: var(--blue);
+  font-family: var(--text-font);
+}
+
+/* Link styles */
 a {
-  font-family: var(--primary-font);
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font), var(--primary-font);
-}
-
-blockquote {
-  font-family: var(--secondary-font), var(--primary-font);
-}
-
-a {
-  color: #023c71;
+  color: var(--blue);
   font-weight: 500;
   text-decoration: none;
+
+  &:hover {
+    color: var(--link-blue);
+  }
 }
 
-a:hover {
-  color: #024e95;
+h1 {
+  font-family: var(--header-font);
+  font-size: 63px;
+  letter-spacing: -3.4px;
+  font-weight: 700;
+  line-height: 0.85;
 }
 
-body {
-  min-width: 320px;
-  min-height: 100vh;
-  background: #fff;
+h2 {
+  font-family: var(--header-font);
+  font-size: 39px;
+  letter-spacing: -3.4px;
+  font-weight: 700;
+  line-height: 0.85;
 }
 
-h3,
-h2,
-h1,
+h3 {
+  font-family: var(--text-font);
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 600;
+}
+
+/* Paragraph styles */
 p {
-  color: #023c71;
+  font-family: var(--text-font);
+  text-align: left;
+  line-height: 1.5;
 }

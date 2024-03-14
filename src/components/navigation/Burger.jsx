@@ -1,22 +1,62 @@
-import React from "react";
-import { FaFacebook } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
-import CONSTANTS from "../elements/Constants";
+import emailIcon from "../../assets/email.png";
+import CopyToClipboardButton from "./CopyToClipboard";
+import Toast from "./Toast";
 
 const Burger = ({ handleToggle, isOpen }) => {
+  const [isColumnVisible, setColumnVisible] = useState(false);
+  const [isColumn2Visible, setColumn2Visible] = useState(false);
+  const [isColumn3Visible, setColumn3Visible] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        setColumnVisible(true);
+      }, 300);
+      const timer2 = setTimeout(() => {
+        setColumn2Visible(true);
+      }, 500);
+      const timer3 = setTimeout(() => {
+        setColumn3Visible(true);
+      }, 700);
+      return () => {
+        clearTimeout(timer3);
+        clearTimeout(timer2);
+        clearTimeout(timer);
+      };
+    } else {
+      setColumnVisible(false);
+      setColumn2Visible(false);
+      setColumn3Visible(false);
+    }
+  }, [isOpen]);
+
+  const handleCopySuccess = () => {
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 1400);
+    setTimeout(() => handleToggle(), 1400);
+  };
+
+  const handleHomeClick = () => {
+    handleToggle();
+    window.location.href = "/";
+  };
   const handleContactClick = () => {
     handleToggle();
     window.location.href = "/home#form";
   };
   const handleCasesClick = () => {
     handleToggle();
-    window.location.href = "/home#cases";
+    window.location.href = "/home#Cases";
   };
-  const handleServicesClick = () => {
+  const handleAboutClick = () => {
     handleToggle();
-    window.location.href = "/home#services";
+    window.location.href = "/about";
   };
   const handlePrintsClick = () => {
     handleToggle();
@@ -29,50 +69,125 @@ const Burger = ({ handleToggle, isOpen }) => {
         <BurgerIconLines className={isOpen ? "open line-3" : "closed line3"} />
       </BurgerIcon>
       <OverlayMenu isOpen={isOpen}>
-        <MenuList>
-          <Link>
-            <MenuItem onClick={handleServicesClick}>Services</MenuItem>
-          </Link>{" "}
-          <Link>
-            <MenuItem onClick={handleCasesClick}>Case Studies</MenuItem>
-          </Link>{" "}
-          <Link>
-            <MenuItem onClick={handleContactClick}>Contact</MenuItem>
-          </Link>
-          <MenuItem onClick={handlePrintsClick}>
-            <a
-              href="https://www.victorblanco.co.uk"
-              target="_blank"
-              aria-label="Visit Victor Blanco's Prints Page"
+        <DivRow>
+          <Column
+            style={{
+              opacity: isColumnVisible ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out",
+            }}
+          >
+            {" "}
+            <MenuList>
+              <Link>
+                <MenuItem onClick={handleHomeClick}>Home</MenuItem>
+              </Link>
+              <Link>
+                <MenuItem onClick={handleCasesClick}>Case Studies</MenuItem>
+              </Link>{" "}
+              <Link>
+                <MenuItem onClick={handleContactClick}>Contact</MenuItem>
+              </Link>
+              <Link>
+                <MenuItem onClick={handleAboutClick}>About Me</MenuItem>
+              </Link>
+              <MenuItem onClick={handlePrintsClick}>
+                <a
+                  href="https://www.victorblanco.co.uk"
+                  target="_blank"
+                  aria-label="Visit Victor Blanco's Prints Page"
+                >
+                  Tree Ring Prints
+                </a>
+              </MenuItem>
+              <MenuItem onClick={handlePrintsClick}>
+                <MenuItem onClick={handleToggle}>
+                  <DivRow
+                    style={{
+                      opacity: isColumn3Visible ? 1 : 0,
+                      transition: "opacity 0.5s ease-in-out",
+                    }}
+                  >
+                    <Icon>
+                      <a
+                        href="https://www.facebook.com/VictorBlancoWebDesign/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Victor Blanco's Facebook Page"
+                      >
+                        <FaFacebook />
+                      </a>
+                    </Icon>
+                    <Icon>
+                      <a
+                        href="https://www.instagram.com/victorblancoweb/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Victor Blanco's Instagram Page"
+                      >
+                        <GrInstagram />
+                      </a>
+                    </Icon>
+
+                    <Icon>
+                      <a
+                        href="https://www.linkedin.com/in/12vblanco/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Victor Blanco's Linkedin Page"
+                      >
+                        <GrLinkedin />{" "}
+                      </a>
+                    </Icon>
+                    <Icon>
+                      <a
+                        href="https://www. github.com/12vblanco/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Visit Victor Blanco's GitHub Page"
+                      >
+                        <FaGithub />{" "}
+                      </a>
+                    </Icon>
+                  </DivRow>
+                </MenuItem>
+              </MenuItem>
+            </MenuList>
+          </Column>
+          <DivRow>
+            <Column2
+              style={{
+                opacity: isColumn2Visible ? 1 : 0,
+                transition: "opacity 0.5s ease-in-out",
+              }}
             >
-              Tree Ring Prints
-            </a>
-          </MenuItem>
-          <MenuItem onClick={handleToggle}>
-            <a
-              href="https://www.facebook.com/VictorBlancoWebDesign/"
-              target="_blank"
-              aria-label="Visit Victor Blanco's Facebook Page"
-            >
-              <FaFacebook />{" "}
-            </a>
-            <a
-              href="https://www.instagram.com/victorblancoweb/"
-              target="_blank"
-              aria-label="Visit Victor Blanco's Instagram Page"
-            >
-              <GrInstagram />{" "}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/12vblanco/"
-              target="_blank"
-              aria-label="Visit Victor Blanco's Linkedin Page"
-            >
-              <GrLinkedin />{" "}
-            </a>
-          </MenuItem>
-        </MenuList>
+              {" "}
+              <Tel>
+                <a
+                  href="https://wa.me/441234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp
+                </a>
+              </Tel>
+              <Tel>
+                <a href="https://t.me/VBWebs" target="_blank">
+                  Telegram
+                </a>
+              </Tel>
+              <CopyToClipboardButton
+                email="blancowebsAhTgmailDhOTcom"
+                emailIcon={emailIcon}
+                onCopySuccess={handleCopySuccess}
+              />
+              {showToast && <Toast message="Email Copied to clipboard!" />}
+              <Copy>Victor Blanco &copy; 2019-2024</Copy>
+              <Copy>Edinburgh Scotland</Copy>
+            </Column2>
+          </DivRow>
+        </DivRow>
       </OverlayMenu>
+      <OverlayMenu2 isOpen={isOpen}></OverlayMenu2>
     </>
   );
 };
@@ -129,7 +244,7 @@ const BurgerIconLines = styled.span`
   transform: translate(-50%, -50%);
   height: 5px;
   width: 30px;
-  background-color: ${CONSTANTS.COLOUR.darkBlue};
+  background-color: var(--blue);
   transition: all 0.3s ease-in-out;
 
   &::before,
@@ -139,7 +254,7 @@ const BurgerIconLines = styled.span`
     position: absolute;
     height: 4px;
     width: 30px;
-    background-color: ${CONSTANTS.COLOUR.darkBlue};
+    background-color: var(--blue);
     transition: all 0.3s ease-in-out;
   }
 
@@ -173,60 +288,123 @@ const OverlayMenu = styled.div`
   top: 0;
   left: 0;
   width: calc(100% - 50px);
-  height: 100vh;
-  background: ${CONSTANTS.COLOUR.white};
+  height: calc(100% - 50px);
+  background: var(--white);
   padding-right: 15px;
   margin-left: 50px;
   margin-top: 50px;
   z-index: 999;
   transition: transform 0.3s ease-in-out;
   transform: ${(props) =>
-    props.isOpen ? "translateX(0px)" : "translateX(100%)"};
+    props.isOpen ? "translateX(280px)" : "translateX(100%)"};
 
-  @media (max-width: 600px) {
-    margin-left: 0;
-    width: 100%;
+  @media (max-width: 1082px) {
+    transform: ${(props) =>
+      props.isOpen ? "translateX(0px)" : "translateX(100%)"};
+  }
+  @media (max-width: 441px) {
+    width: 100vw;
+
+    transform: ${(props) =>
+      props.isOpen ? "translateX(-50px)" : "translateX(110%)"};
+  }
+`;
+const OverlayMenu2 = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: ${(props) => (props.isOpen ? 1 : 0)};
+  width: 280px;
+  height: 100vh;
+  background: var(--white);
+  padding-right: 15px;
+  margin-left: 50px;
+  z-index: 899;
+  border-right: 1px solid var(--blue);
+  transition: transform 0.5s ease-in-out;
+  transform: ${(props) =>
+    props.isOpen ? "translateY(0)" : "translateY(100%)"};
+
+  @media (max-width: 1082px) {
+    display: none;
+  }
+`;
+
+const DivRow = styled.div`
+  display: flex;
+`;
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 80vh;
+  width: 50%;
+  @media (max-width: 826px) {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 380px) {
+    margin-left: 1rem;
+  }
+`;
+const Column2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 80vh;
+  width: 100%;
+
+  @media (max-width: 826px) {
+    margin-left: 2rem;
+  }
+  @media (max-width: 646px) {
+    display: none;
   }
 `;
 
 const MenuList = styled.ul`
   list-style: none;
-  margin: 0;
-  padding: 0;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
+  margin-left: 2rem;
+
+  @media (max-width: 826px) {
+    margin-left: 0;
+  }
 `;
 
 const MenuItem = styled.li`
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 61px;
+  font-weight: 600;
   letter-spacing: -2.8px;
-  margin: 20px;
-  color: ${CONSTANTS.COLOUR.darkBlue};
+  margin: 6px;
+  color: var(--blue);
+  list-style: none;
   transition: all 0.5 linear;
-  @media (max-width: 600px) {
-    font-size: 40px;
+
+  @media (max-width: 1370px) {
+    font-size: 46px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 464px) {
     font-size: 36px;
   }
 
   a {
-    font-size: 52px;
-    letter-spacing: -1.7px;
-    font-weight: 700;
-    margin: 20px;
-    color: ${CONSTANTS.COLOUR.darkBlue};
+    font-weight: 600;
+    letter-spacing: -2.8px;
+    /* margin: 20px; */
+    color: var(--blue);
     transition: all 0.5 linear;
-    @media (max-width: 600px) {
-      font-size: 40px;
-    }
-    @media (max-width: 380px) {
-      font-size: 36px;
-    }
+
     &:hover {
       color: rgb(1, 95, 182);
     }
@@ -236,5 +414,18 @@ const MenuItem = styled.li`
     color: rgb(1, 95, 182);
   }
 `;
+
+const Icon = styled.div`
+  margin-right: 40px;
+  font-size: 36px;
+
+  @media (max-width: 464px) {
+    font-size: 30px;
+  }
+`;
+const Tel = styled.div`
+  font-size: 28px;
+`;
+const Copy = styled.div``;
 
 export default Burger;

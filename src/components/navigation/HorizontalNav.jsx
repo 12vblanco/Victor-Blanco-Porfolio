@@ -1,8 +1,8 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
-import Logo from "./Logo";
 import CONSTANTS from "../elements/Constants";
+import Logo from "./Logo";
 import NavContact from "./NavContact";
 
 const HorizontalNav = ({ handleToggle, isOpen }) => {
@@ -48,7 +48,7 @@ const NavBox = styled.div`
   z-index: 21;
   border-width: 0px 1px 1px 0px;
   border-style: solid;
-  border-color: ${CONSTANTS.COLOUR.darkBlue};
+  border-color: var(--blue);
   scroll-behavior: smooth;
   @media (max-width: 600px) {
     width: calc(100% - 50px);

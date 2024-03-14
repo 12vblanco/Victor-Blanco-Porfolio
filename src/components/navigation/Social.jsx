@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaRegEnvelope } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaRegEnvelope } from "react-icons/fa";
 import { GrInstagram, GrLinkedin } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
@@ -39,6 +39,16 @@ const Social = ({ flexDirection, isOpen }) => {
               aria-label="Visit Victor Blanco's Linkedin Page"
             >
               <GrLinkedin />{" "}
+            </a>
+          </Icon>
+          <Icon>
+            <a
+              href="https://www. github.com/12vblanco/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Victor Blanco's GitHub Page"
+            >
+              <FaGithub />{" "}
             </a>
           </Icon>
           <IconContact>

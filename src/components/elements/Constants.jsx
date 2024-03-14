@@ -1,12 +1,12 @@
 const CONSTANTS = {
   FONT_SIZE: {
-    giant: "48px",
+    giant: "63px",
     super: "38px",
     xxl: "32px",
     xlg: "26px",
     lg: "21px",
     md: "18px",
-    sm: "14px",
+    sm: "15px",
     tiny: "10px",
   },
 

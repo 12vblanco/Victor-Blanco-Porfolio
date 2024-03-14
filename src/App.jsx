@@ -3,12 +3,16 @@ import CookieConsent from "react-cookie-consent";
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "./App.css";
+import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
+import OrchardCase from "./components/home/CaseStudies/OrchardCase";
+import UXCase from "./components/home/CaseStudies/UXCase";
+import VarunaCase from "./components/home/CaseStudies/VarunaCase";
+import Home from "./components/home/Home";
+import Success from "./components/home/postcard/Success";
 import HorizontalNav from "./components/navigation/HorizontalNav";
 import VerticalNav from "./components/navigation/VerticalNav";
-import Home from "./components/pages/Home";
 import Terms from "./components/pages/Terms";
-import Success from "./components/postcard/Success";
 
 function scrollToTop() {
   window.scrollTo({
@@ -62,9 +66,19 @@ function App() {
       <HorizontalNav handleToggle={handleToggle} isOpen={isOpen} />
       <VerticalNav handleToggle={handleToggle} isOpen={isOpen} />{" "}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home scrollToTop={scrollToTop} />} />
+        <Route path="/home" element={<Home scrollToTop={scrollToTop} />} />
         <Route path="/terms" element={<Terms scrollToTop={scrollToTop} />} />
+        <Route path="/UXCase" element={<UXCase scrollToTop={scrollToTop} />} />
+        <Route
+          path="/VarunaCase"
+          element={<VarunaCase scrollToTop={scrollToTop} />}
+        />
+        <Route
+          path="/OrchardCase"
+          element={<OrchardCase scrollToTop={scrollToTop} />}
+        />
+        <Route path="/About" element={<About scrollToTop={scrollToTop} />} />
         <Route path="/Success" element={<Success />} />
       </Routes>
       <Footer scrollToTop={scrollToTop} />

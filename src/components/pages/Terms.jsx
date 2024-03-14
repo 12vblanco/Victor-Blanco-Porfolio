@@ -113,14 +113,14 @@ const Div = styled.div`
 `;
 
 const Btn = styled.h1`
-  font-family: "Archivo Black", sans-serif;
+  font-family: var(--header-font), sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   margin: 30px 0;
 `;
 const H1 = styled.h1`
-  font-family: "Archivo Black", sans-serif;
+  font-family: var(--header-font), sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;

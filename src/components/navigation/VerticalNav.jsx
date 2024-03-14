@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import CONSTANTS from "../elements/Constants";
 import Burger from "./Burger";
 import Social from "./Social";
-import CONSTANTS from "../elements/Constants";
 
 const VerticalNav = ({ handleToggle, isOpen }) => {
   return (
@@ -36,7 +36,7 @@ const NavBox = styled.div`
   z-index: 20;
   border-width: 0px 1px 1px 0px;
   border-style: solid;
-  border-color: ${CONSTANTS.COLOUR.darkBlue};
+  border-color: var(--blue);
   scroll-behavior: smooth;
   @media (max-width: 440px) {
     height: 50px;
