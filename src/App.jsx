@@ -79,7 +79,10 @@ function App() {
           element={<OrchardCase scrollToTop={scrollToTop} />}
         />
         <Route path="/About" element={<About scrollToTop={scrollToTop} />} />
-        <Route path="/Success" element={<Success />} />
+        <Route
+          path="/Success"
+          element={<Success scrollToTop={scrollToTop} />}
+        />
       </Routes>
       <Footer scrollToTop={scrollToTop} />
     </>

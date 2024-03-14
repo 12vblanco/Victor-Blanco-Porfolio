@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import ContactBtn from "../../../components/elements/ContactBtn";
 
-function Success() {
+function Success(scrollToTop) {
   const handleBackHome = (scrollToTop) => {
     scrollToTop();
-    window.location.href = "/";
+    window.location.href = "/home";
   };
   return (
     <Div>
