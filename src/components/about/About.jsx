@@ -101,14 +101,14 @@ const About = () => {
               <Img src={pic2} alt={"Image of Victor Blanco"} />
             </HeroImg>
           </Row2>
-          <P style={{ maxWidth: "46vw", textAlign: "center" }}>
+          <P2>
             Thanks for taking the time to look at my portfolio and please do get
             in touch if you have any questions or you just want to randomly
             chat.
             <br /> I am always happy to chat. <br />
             <br />
             <br />I leave you now with some words from my good friend Michael.
-          </P>
+          </P2>
         </SectionDiv>
       </SectionContainer>
       <MichaelReference />
@@ -173,6 +173,25 @@ const P = styled.p`
   }
   @media (max-width: 540px) {
     padding: 0.4rem;
+  }
+`;
+const P2 = styled.p`
+  width: 50%;
+  padding-left: 0.2rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  max-width: 700px;
+  text-align: center;
+  @media (max-width: 920px) {
+    padding-right: 0.2rem;
+    font-size: 15px;
+  }
+  @media (max-width: 830px) {
+    padding: 1rem 2rem;
+  }
+  @media (max-width: 540px) {
+    padding: 0.4rem;
+    width: 98%;
   }
 `;
 
