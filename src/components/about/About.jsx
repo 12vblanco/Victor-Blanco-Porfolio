@@ -8,7 +8,7 @@ import SectionContainer from "../elements/SectionContainer";
 import SectionDiv from "../elements/SectionDiv";
 import MichaelReference from "./MichaelReference";
 
-const About = (scrollToTop) => {
+const About = () => {
   const [confettiTrigger, setConfettiTrigger] = useState(false);
   const [numberOfPieces, setNumberOfPieces] = useState(800);
   const [opacity, setOpacity] = useState(1);
