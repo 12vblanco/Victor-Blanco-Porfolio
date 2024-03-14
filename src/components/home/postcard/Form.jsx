@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import ContactBtn from "../../elements/ContactBtn";
 
-const Form = () => {
+const Form = (scrollToTop) => {
   let navigate = useNavigate();
 
   const submitHandler = (e) => {
@@ -79,7 +79,12 @@ const Form = () => {
             </div>
           </div>
           <div>
-            <Btn type="submit" name="submit" tagName={"Send"} />
+            <Btn
+              type="submit"
+              name="submit"
+              tagName={"Send"}
+              onClick={scrollToTop}
+            />
           </div>
         </RowBottom>
       </form>

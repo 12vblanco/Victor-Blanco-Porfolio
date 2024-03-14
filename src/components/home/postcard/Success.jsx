@@ -3,13 +3,13 @@ import styled from "styled-components";
 import ContactBtn from "../../../components/elements/ContactBtn";
 
 function Success() {
-  const handleBackHome = () => {
-    // handleToggle();
+  const handleBackHome = (scrollToTop) => {
+    scrollToTop();
     window.location.href = "/";
   };
   return (
     <Div>
-      <h1>Thank you for submitting the form!</h1>
+      <h2>Thank you for submitting the form!</h2>
       <Text>We will get back to you soon.</Text>
       <ContactBtn onClick={handleBackHome} tagName={"Go Back!"} />{" "}
     </Div>
@@ -36,6 +36,7 @@ const Div = styled.div`
 
 const Text = styled.p`
   margin-bottom: 44px;
+  font-weight: 500;
 `;
 
 export default Success;

@@ -5,7 +5,7 @@ import SectionDiv from "../../elements/SectionDiv";
 import Title from "../../elements/Title";
 import ContactForm from "./Form";
 
-const PostFrom = () => {
+const PostFrom = (scrollToTop) => {
   return (
     <Div>
       <SectionContainer>
@@ -15,7 +15,7 @@ const PostFrom = () => {
           <H3> I'll get in touch</H3>
         </FlexDiv>
         <SectionDiv>
-          <ContactForm />
+          <ContactForm scrollToTop={scrollToTop} />
         </SectionDiv>
       </SectionContainer>
     </Div>
