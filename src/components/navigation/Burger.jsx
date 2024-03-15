@@ -160,18 +160,8 @@ const Burger = ({ handleToggle, isOpen }) => {
                 transition: "opacity 0.5s ease-in-out",
               }}
             >
-              {" "}
               <Tel>
-                <a
-                  href="https://wa.me/441234567890"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WhatsApp
-                </a>
-              </Tel>
-              <Tel>
-                <a href="https://t.me/VBWebs" target="_blank">
+                <a href="https://t.me/V1ctor13" target="_blank">
                   Telegram
                 </a>
               </Tel>
