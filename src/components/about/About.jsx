@@ -58,7 +58,7 @@ const About = () => {
               <Img src={pic1} alt={"Image of Victor Blanco"} />
             </HeroImg>
             <P>
-              "My name is Victor, and I have been in Scotland for 20 years. I
+              My name is Victor, and I have been in Scotland for 20 years. I
               have always had an interest in learning new things and making, and
               for that reason, I have far more hobbies than I can actually
               pursue. However, a few things remain constant in my life. Web
@@ -80,22 +80,21 @@ const About = () => {
               >
                 HERE
               </a>
-              "
             </P>
           </Row>
           <Row2>
             <P>
-              "I am in my final year at Napier University. I have thoroughly
+              I am in my final year at Napier University. I have thoroughly
               enjoyed my time there, growing significantly both as a person and
-              as a developer. I am aiming to graduate this December with a
-              First-Class Honours degree in Web Design and Development.
-              Currently, I am working on my honour's project: I will build my
-              print portfolio three times, using Vue, Angular, and React, and
-              then employ browser-based tools to evaluate system performance.
+              as a developer. I am aiming to graduate this December with a First
+              Honours Degree in Web Design and Development. Currently, I am
+              working on my honour's project: I will build my print portfolio
+              three times, using Vue, Angular, and React, and then employ
+              browser-based tools to evaluate system performance.
               <br />
               Web development is what I want to do for the rest of my life, and
               I am genuinely excited about the new possibilities that emerging
-              technologies will bring."
+              technologies will bring.
             </P>
             <HeroImg>
               <Img src={pic2} alt={"Image of Victor Blanco"} />
@@ -107,7 +106,6 @@ const About = () => {
             chat.
             <br /> I am always happy to chat. <br />
             <br />
-            <br />I leave you now with some words from my good friend Michael.
           </P2>
         </SectionDiv>
       </SectionContainer>
