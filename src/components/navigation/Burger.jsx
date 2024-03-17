@@ -78,79 +78,81 @@ const Burger = ({ handleToggle, isOpen }) => {
           >
             {" "}
             <MenuList>
-              <Link>
-                <MenuItem onClick={handleHomeClick}>Home</MenuItem>
-              </Link>
-              <Link>
-                <MenuItem onClick={handleCasesClick}>Case Studies</MenuItem>
-              </Link>{" "}
-              <Link>
-                <MenuItem onClick={handleContactClick}>Contact</MenuItem>
-              </Link>
-              <Link>
-                <MenuItem onClick={handleAboutClick}>About Me</MenuItem>
-              </Link>
-              <MenuItem onClick={handlePrintsClick}>
-                <a
-                  href="https://www.victorblanco.co.uk"
-                  target="_blank"
-                  aria-label="Visit Victor Blanco's Prints Page"
-                >
-                  Tree Ring Prints
-                </a>
-              </MenuItem>
-              <div onClick={handlePrintsClick}>
-                <MenuItem onClick={handleToggle}>
-                  <DivRow
-                    style={{
-                      opacity: isColumn3Visible ? 1 : 0,
-                      transition: "opacity 0.5s ease-in-out",
-                    }}
+              <ul>
+                <Link>
+                  <MenuItem onClick={handleHomeClick}>Home</MenuItem>
+                </Link>
+                <Link>
+                  <MenuItem onClick={handleCasesClick}>Case Studies</MenuItem>
+                </Link>{" "}
+                <Link>
+                  <MenuItem onClick={handleContactClick}>Contact</MenuItem>
+                </Link>
+                <Link>
+                  <MenuItem onClick={handleAboutClick}>About Me</MenuItem>
+                </Link>
+                <MenuItem onClick={handlePrintsClick}>
+                  <a
+                    href="https://www.victorblanco.co.uk"
+                    target="_blank"
+                    aria-label="Visit Victor Blanco's Prints Page"
                   >
-                    <Icon>
-                      <a
-                        href="https://www.facebook.com/VictorBlancoWebDesign/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Visit Victor Blanco's Facebook Page"
-                      >
-                        <FaFacebook />
-                      </a>
-                    </Icon>
-                    <Icon>
-                      <a
-                        href="https://www.instagram.com/victorblancoweb/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Visit Victor Blanco's Instagram Page"
-                      >
-                        <GrInstagram />
-                      </a>
-                    </Icon>
-
-                    <Icon>
-                      <a
-                        href="https://www.linkedin.com/in/12vblanco/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Visit Victor Blanco's Linkedin Page"
-                      >
-                        <GrLinkedin />{" "}
-                      </a>
-                    </Icon>
-                    <Icon>
-                      <a
-                        href="https://www. github.com/12vblanco/"
-                        target="_blank"
-                        rel="noreferrer"
-                        aria-label="Visit Victor Blanco's GitHub Page"
-                      >
-                        <FaGithub />{" "}
-                      </a>
-                    </Icon>
-                  </DivRow>
+                    Tree Ring Prints
+                  </a>
                 </MenuItem>
-              </div>
+                <div onClick={handlePrintsClick}>
+                  <MenuItem onClick={handleToggle}>
+                    <DivRow
+                      style={{
+                        opacity: isColumn3Visible ? 1 : 0,
+                        transition: "opacity 0.5s ease-in-out",
+                      }}
+                    >
+                      <Icon>
+                        <a
+                          href="https://www.facebook.com/VictorBlancoWebDesign/"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label="Visit Victor Blanco's Facebook Page"
+                        >
+                          <FaFacebook />
+                        </a>
+                      </Icon>
+                      <Icon>
+                        <a
+                          href="https://www.instagram.com/victorblancoweb/"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label="Visit Victor Blanco's Instagram Page"
+                        >
+                          <GrInstagram />
+                        </a>
+                      </Icon>
+
+                      <Icon>
+                        <a
+                          href="https://www.linkedin.com/in/12vblanco/"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label="Visit Victor Blanco's Linkedin Page"
+                        >
+                          <GrLinkedin />{" "}
+                        </a>
+                      </Icon>
+                      <Icon>
+                        <a
+                          href="https://www. github.com/12vblanco/"
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label="Visit Victor Blanco's GitHub Page"
+                        >
+                          <FaGithub />{" "}
+                        </a>
+                      </Icon>
+                    </DivRow>
+                  </MenuItem>
+                </div>
+              </ul>
             </MenuList>
           </Column>
           <DivRow>
