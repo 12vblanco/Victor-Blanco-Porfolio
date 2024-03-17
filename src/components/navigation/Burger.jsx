@@ -99,7 +99,7 @@ const Burger = ({ handleToggle, isOpen }) => {
                   Tree Ring Prints
                 </a>
               </MenuItem>
-              <MenuItem onClick={handlePrintsClick}>
+              <div onClick={handlePrintsClick}>
                 <MenuItem onClick={handleToggle}>
                   <DivRow
                     style={{
@@ -150,7 +150,7 @@ const Burger = ({ handleToggle, isOpen }) => {
                     </Icon>
                   </DivRow>
                 </MenuItem>
-              </MenuItem>
+              </div>
             </MenuList>
           </Column>
           <DivRow>

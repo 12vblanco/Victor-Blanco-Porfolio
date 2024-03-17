@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import SectionContainer from "../../elements/SectionContainer";
-import SectionDiv from "../../elements/SectionDiv";
 
 const Case = ({
   id,
@@ -18,50 +17,34 @@ const Case = ({
   link,
   scrollToTop,
 }) => {
-  const ImgPositioned = styled(ImgDiv)`
-    order: ${imgOnRight ? 2 : 1};
-  `;
-
-  const TextPositioned = styled(TextDiv)`
-    order: ${imgOnRight ? 1 : 2};
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    @media (max-width: 940px) {
-      order: ${imgOnRight ? 2 : 1};
-    }
-  `;
-
   return (
     <Link to={link} onClick={scrollToTop}>
-      <SectionContainer>
-        <SectionDiv id={id}>
-          <ImgPositioned
-            img={img}
-            alt={description}
-            width={width}
-            height={height}
-          />
-          <TextPositioned>
-            {" "}
-            <Title>{title}</Title>
-            <SubTitle>
-              {subtitle}
-              <Tech>{tech}</Tech>
-            </SubTitle>
-            <Text>{text}</Text>
-            <Button>More Information</Button>{" "}
-          </TextPositioned>
-        </SectionDiv>
-      </SectionContainer>{" "}
+      <CaseContainer
+        style={{
+          flexDirection: props.imgOnRight === true ? "row" : "row-reverse",
+        }}
+      >
+        <ImgDiv img={img} alt={description} width={width} height={height} />
+        <TextDiv>
+          <Title>{title}</Title>
+          <SubTitle>
+            {subtitle}
+            <Tech>{tech}</Tech>
+          </SubTitle>
+          <Text>{text}</Text>
+          <Button>More Information</Button>{" "}
+        </TextDiv>
+      </CaseContainer>
     </Link>
   );
 };
 
+const CaseContainer = styled(SectionContainer)`
+  display: flex;
+`;
+
 const ImgDiv = styled.div`
-  width: 50%;
+  flex: 1;
   height: 640px;
   background-image: url(${(props) => props.img});
   background-size: cover;
@@ -82,10 +65,15 @@ const ImgDiv = styled.div`
 `;
 
 const TextDiv = styled.div`
-  width: 50%;
+  flex: 1;
   height: 640px;
   background: var(--blue);
   padding: 0 1.75rem 0.75rem 1.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
   @media (max-width: 940px) {
     width: 70vw;
     height: fit-content;

@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const Toast = ({ message }) => <Div>{message}</Div>;
-
 const Div = styled.div`
   position: absolute;
   top: 70%;
@@ -14,4 +12,7 @@ const Div = styled.div`
   border-radius: 5px;
   z-index: 1000;
 `;
+
+const Toast = ({ message }) => <Div>{message}</Div>;
+
 export default Toast;

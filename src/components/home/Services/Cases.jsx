@@ -14,6 +14,7 @@ const Cases = [
     height: "640px",
     description: "An example of web development",
     link: "/OrchardCase",
+    imgOnRight: true,
   },
   {
     id: "02",
@@ -26,6 +27,7 @@ const Cases = [
     height: "640px",
     description: "A mock-up of my app design",
     link: "/UXCase",
+    imgOnRight: false,
   },
   {
     id: "03",
@@ -38,6 +40,7 @@ const Cases = [
     height: "640px",
     description: "A CMS website",
     link: "/VarunaCase",
+    imgOnRight: true,
   },
 ];
 
