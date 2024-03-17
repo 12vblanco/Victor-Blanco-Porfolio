@@ -35,7 +35,10 @@ const Div = styled.div`
 
 const H1 = styled.h1`
   font-family: var(--hw-font);
+  font-size: 56px;
   font-weight: 100;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
   letter-spacing: 0;
   @media (max-width: 660px) {
     font-size: 34px;
