@@ -18,8 +18,8 @@ const MichaelReference = () => {
             and the artistic touch of Pam. His designing and developing skills
             deserve a Dundie this year.
             <br />
-            <b>That's a Michael Scott guarantee!"" </b> <br />
-            <br /> "Now, where's the button to make confetti rain down? <br />
+            <b>That's a Michael Scott guarantee! </b> <br />
+            <br /> Now, where's the button to make confetti rain down? <br />
             This calls for a celebration!"
           </ReferenceText>
         </ReferenceSection>
