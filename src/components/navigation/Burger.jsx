@@ -79,18 +79,22 @@ const Burger = ({ handleToggle, isOpen }) => {
             {" "}
             <MenuList>
               <ul>
-                <Link>
-                  <MenuItem onClick={handleHomeClick}>Home</MenuItem>
-                </Link>
-                <Link>
-                  <MenuItem onClick={handleCasesClick}>Case Studies</MenuItem>
-                </Link>{" "}
-                <Link>
-                  <MenuItem onClick={handleContactClick}>Contact</MenuItem>
-                </Link>
-                <Link>
-                  <MenuItem onClick={handleAboutClick}>About Me</MenuItem>
-                </Link>
+                <MenuItem onClick={handleHomeClick}>
+                  <Link>Home </Link>
+                </MenuItem>
+
+                <MenuItem onClick={handleCasesClick}>
+                  <Link>Case Studies</Link>
+                </MenuItem>
+
+                <MenuItem onClick={handleContactClick}>
+                  <Link>Contact</Link>
+                </MenuItem>
+
+                <MenuItem onClick={handleAboutClick}>
+                  <Link>About Me</Link>
+                </MenuItem>
+
                 <MenuItem onClick={handlePrintsClick}>
                   <a
                     href="https://www.victorblanco.co.uk"
