@@ -41,7 +41,7 @@ function App() {
         style={{
           background: "rgba(2, 60, 113, 0.9)",
           fontWeight: "500",
-          height: "14vh",
+          minHeight: "120px",
           alignItems: "center",
           fontSize: "18px",
         }}
