@@ -111,7 +111,7 @@ const About = () => {
       </SectionContainer>
       <MichaelReference />
       <DivBtn>
-        <Btn onClick={startConfetti} tagName={"Button"}></Btn>
+        <Btn onClick={startConfetti} tagName={"Click Here"}></Btn>
       </DivBtn>
       {confettiTrigger && (
         <ConfettiContainer>
