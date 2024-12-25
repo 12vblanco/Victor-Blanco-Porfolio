@@ -160,7 +160,8 @@ const P = styled.p`
   width: 100%;
   padding-left: 0.2rem;
   padding-right: 3rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.21rem;
+  padding-top: 1rem;
   max-width: 700px;
   @media (max-width: 920px) {
     padding-right: 0.2rem;
@@ -214,27 +215,21 @@ const HeroImg = styled.div`
 `;
 
 const Img = styled.img`
-  width: 40vw;
-  max-width: 300px;
-  height: 40vw;
-  max-height: 300px;
+  width: 30vw;
+  max-width: 260px;
+  height: 30vw;
+  max-height: 260px;
   margin: 0 40px 40px 40px;
-  border-radius: 20px;
+  border-radius: 24px;
   object-fit: cover;
 
   @media (max-width: 920px) {
     border-radius: 8px;
-    max-width: 380px;
-    max-height: 380px;
     width: 90vw;
     height: 90vw;
   }
   @media (max-width: 520px) {
     border-radius: 8px;
-    max-width: 100%;
-    max-height: 100%;
-    width: 100vw;
-    height: 100%;
   }
 `;
 
