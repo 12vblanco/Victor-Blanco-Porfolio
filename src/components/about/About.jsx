@@ -84,13 +84,13 @@ const About = () => {
           </Row>
           <Row2>
             <P>
-              I am in my final year at Napier University. I have thoroughly
-              enjoyed my time there, growing significantly both as a person and
-              as a developer. I am aiming to graduate this December with a First
-              Honours Degree in Web Design and Development. Currently, I am
-              working on my honour's project: I will build my print portfolio
-              three times, using Vue, Angular, and React, and then employ
-              browser-based tools to evaluate system performance.
+              I graduated from Napier University with a First Honours Degree in
+              Web Design and Development. I thoroughly enjoyed my time there,
+              growing significantly both as a person and as a developer. My
+              honour's project was titled 'Performance Comparison of an Art
+              Portfolio Using Vue, React, and Angular'. In it I built a
+              portfolio website, using Vue, Angular, and React, and then employ
+              browser-based tools to evaluate system performance in all three.
               <br />
               Web development is what I want to do for the rest of my life, and
               I am genuinely excited about the new possibilities that emerging
