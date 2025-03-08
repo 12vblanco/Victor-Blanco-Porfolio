@@ -112,7 +112,7 @@ h2 {
   font-family: var(--header-font);
   font-size: 39px;
   letter-spacing: -.4px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 0.85;
 }
 
@@ -120,7 +120,7 @@ h3 {
   font-family: var(--text-font);
   font-size: 24px;
   letter-spacing: -0.2px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Paragraph styles */
@@ -128,4 +128,5 @@ p {
   font-family: var(--text-font);
   text-align: left;
   line-height: 1.5;
+  font-weight: 300;
 }

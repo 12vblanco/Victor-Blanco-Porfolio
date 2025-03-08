@@ -126,7 +126,7 @@ const H1 = styled.h1`
   align-items: flex-start;
   font-size: ${CONSTANTS.FONT_SIZE.giant};
   letter-spacing: -1.7px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
   margin: 30px 0;
   @media (max-width: 990px) {

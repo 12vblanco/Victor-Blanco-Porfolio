@@ -43,7 +43,7 @@ const Social = ({ flexDirection, isOpen }) => {
           </Icon>
           <Icon>
             <a
-              href="https://www. github.com/12vblanco/"
+              href="https://www.github.com/12vblanco/"
               target="_blank"
               rel="noreferrer"
               aria-label="Visit Victor Blanco's GitHub Page"

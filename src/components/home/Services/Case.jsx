@@ -105,7 +105,7 @@ const Title = styled.h2`
   text-align: left;
   color: white;
   z-index: 2;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
 
   @media (max-width: 990px) {
     font-size: 40px;
@@ -155,7 +155,7 @@ const Button = styled.button`
   cursor: pointer;
   font-family: "Poppins";
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 500;
   border: none;
   padding: 0.2rem 0.5rem;
   outline: none;

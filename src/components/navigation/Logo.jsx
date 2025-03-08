@@ -23,7 +23,7 @@ const LogoImg = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-weight: 700;
+  font-weight: 600;
   padding-right: 10px;
   letter-spacing: -4px;
   font-size: 21px;

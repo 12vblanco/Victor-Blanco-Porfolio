@@ -29,19 +29,17 @@ const HeroDiv = () => {
               </span>
             </SubHeaderText>
             <LineText src={dev} alt="development" />
-            <P>
+            <P style={{ fontWeight: 400 }}>
               Hello, I'm Victor. <br />I am a Web Designer, Developer and a
               Print Maker based in Leith, Edinburgh. <br />I can help your
               business grow with a unique website that shows the best you have
               to offer, with responsive and accessible designs to stand out.
-              {/* The websites are specially tailored to you at an
-              affordable price. */}
             </P>
             <P>
               <a href="#form" style={{ fontWeight: "500", fontSize: "16px" }}>
                 Get in touch,
               </a>{" "}
-              let's work together.
+              and let's work together.
             </P>
           </HeroText>
         </DivContainer>
@@ -56,7 +54,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 60vh;
+  min-height: calc(100vh - 100px);
   padding-top: 100px;
   padding-bottom: 80px;
   border: solid;

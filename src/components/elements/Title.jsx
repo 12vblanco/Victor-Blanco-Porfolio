@@ -11,7 +11,7 @@ const H2 = styled.h2`
   justify-content: flex-start;
   align-items: flex-start;
   letter-spacing: -1.4px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: left;
   width: 682px;
   margin-bottom: -2px;

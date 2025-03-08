@@ -140,7 +140,7 @@ const H1 = styled.h1`
   margin-left: -0.2rem;
   text-align: left;
   z-index: 2;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 0.2rem;
 
   @media (max-width: 503px) {
