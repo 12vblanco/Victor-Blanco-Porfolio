@@ -18,7 +18,6 @@ const Form = (props) => {
     })
       .then(() => {
         navigate("/Success");
-        props.scrollToTop();
       })
       .catch((error) => alert(error));
   };
