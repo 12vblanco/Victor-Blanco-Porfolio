@@ -1,23 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ContactBtn from "../../../components/elements/ContactBtn";
 
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
-scrollToTop();
 function Success() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const handleBackHome = () => {
     window.location.href = "/home";
   };
+
   return (
     <Div>
       <h2>Thank you for submitting the form!</h2>
       <Text>We will get back to you soon.</Text>
-      <ContactBtn onClick={handleBackHome} tagName={"Go Back!"} />{" "}
+      <ContactBtn onClick={handleBackHome} tagName={"Go Back!"} />
     </Div>
   );
 }
