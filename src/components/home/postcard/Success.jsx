@@ -4,6 +4,7 @@ import ContactBtn from "../../../components/elements/ContactBtn";
 
 function Success() {
   useEffect(() => {
+    console.log("Success component mounted, scrolling to top");
     window.scrollTo({
       top: 0,
       behavior: "smooth",
