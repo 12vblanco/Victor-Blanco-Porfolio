@@ -5,7 +5,7 @@ import SectionDiv from "../../elements/SectionDiv";
 import Title from "../../elements/Title";
 import ContactForm from "./Form";
 
-const PostFrom = ({scrollToTop}) => {
+const PostFrom = (scrollToTop) => {
   return (
     <Div>
       <SectionContainer>

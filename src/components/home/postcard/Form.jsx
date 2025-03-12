@@ -2,12 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import ContactBtn from "../../elements/ContactBtn";
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
+
 const Form = (props) => {
   let navigate = useNavigate();
 
@@ -23,7 +18,7 @@ const Form = (props) => {
     })
       .then(() => {
         navigate("/Success");
-        scrollToTop();
+        props.scrollToTop();
       })
       .catch((error) => alert(error));
   };
