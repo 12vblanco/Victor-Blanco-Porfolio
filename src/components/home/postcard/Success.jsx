@@ -31,7 +31,8 @@ const Div = styled.div`
   flex-direction: column;
   width: 100%;
   height: 90vh;
-  // border-right: solid 1px #000;
+  border-right: solid 1px #000;
+  margin-bottom: -10%;
 
   /* @media (max-width: 860px) {
     height: fit-content;
