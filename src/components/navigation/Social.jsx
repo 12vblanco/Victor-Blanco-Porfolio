@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaRegEnvelope } from "react-icons/fa";
-import { GrInstagram, GrLinkedin } from "react-icons/gr";
+import { GrInstagram } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 

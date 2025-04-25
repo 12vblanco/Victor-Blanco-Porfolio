@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaGithub } from "react-icons/fa";
-import { GrInstagram, GrLinkedin } from "react-icons/gr";
+import { GrInstagram } from "react-icons/gr";
 import { HashLink as Link } from "react-router-hash-link";
 import styled from "styled-components";
 import emailIcon from "../../assets/email.png";
@@ -135,7 +135,7 @@ const Burger = ({ handleToggle, isOpen }) => {
 
                       {/* <Icon>
                         <a
-                          href="https://www.linkedin.com/in/12vblanco/"
+                          href="https://www..com/in/12vblanco/"
                           target="_blank"
                           rel="noreferrer"
                           aria-label="Visit Victor Blanco's Linkedin Page"
