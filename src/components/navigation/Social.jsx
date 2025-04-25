@@ -31,16 +31,6 @@ const Social = ({ flexDirection, isOpen }) => {
               <GrInstagram />
             </a>
           </Icon>
-          {/* <Icon>
-            <a
-              href="https://www.linkedin.com/in/12vblanco/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Visit Victor Blanco's Linkedin Page"
-            >
-              <GrLinkedin />{" "}
-            </a>
-          </Icon> */}
           <Icon>
             <a
               href="https://www.github.com/12vblanco/"
@@ -60,6 +50,16 @@ const Social = ({ flexDirection, isOpen }) => {
               <FaRegEnvelope />
             </Link>
           </IconContact>
+          {/* <Icon>
+            <a
+              href="https://www.linkedin.com/in/12vblanco/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Victor Blanco's Linkedin Page"
+            >
+              <GrLinkedin />{" "}
+            </a>
+          </Icon> */}
         </>
       )}
     </Div>
