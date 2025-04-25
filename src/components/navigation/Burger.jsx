@@ -133,7 +133,7 @@ const Burger = ({ handleToggle, isOpen }) => {
                         </a>
                       </Icon>
 
-                      <Icon>
+                      {/* <Icon>
                         <a
                           href="https://www.linkedin.com/in/12vblanco/"
                           target="_blank"
@@ -142,7 +142,7 @@ const Burger = ({ handleToggle, isOpen }) => {
                         >
                           <GrLinkedin />{" "}
                         </a>
-                      </Icon>
+                      </Icon> */}
                       <Icon>
                         <a
                           href="https://www. github.com/12vblanco/"

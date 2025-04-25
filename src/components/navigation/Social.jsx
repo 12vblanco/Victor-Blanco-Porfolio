@@ -32,14 +32,14 @@ const Social = ({ flexDirection, isOpen }) => {
             </a>
           </Icon>
           <Icon>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/12vblanco/"
               target="_blank"
               rel="noreferrer"
               aria-label="Visit Victor Blanco's Linkedin Page"
             >
               <GrLinkedin />{" "}
-            </a>
+            </a> */}
           </Icon>
           <Icon>
             <a
